@@ -12,3 +12,6 @@ div {
   font-style: italic;
   border: solid;
 }
+.bold {
+  font-weight: bold;
+}
