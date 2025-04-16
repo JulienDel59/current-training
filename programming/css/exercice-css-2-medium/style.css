@@ -1,5 +1,17 @@
+@font-face {
+  font-family: "Wastogi";
+  src: url("./font/Wastogi.ttf");
+}
 .bungee-spice-regular {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+h1 {
+  font-family: "Wastogi", sans-serif;
+  font-size: normal;
+}
+
+body {
+  font-family: "Gill Sans", sans-serif;
 }
