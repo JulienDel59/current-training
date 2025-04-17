@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+th {
+  background-color: rgb(189, 189, 58);
+  border: 1px solid rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 8px;
+}
+tr,
+td {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+}
+caption {
+  border: 1px solid rgb(0, 0, 0);
+  border-bottom: 0;
+  padding: 8px;
+}
+.lineaire-simple {
+  background: linear-gradient(blue, pink);
+}
+#radius {
+  border-top-left-radius: 30px;
+}
