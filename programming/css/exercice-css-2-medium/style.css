@@ -18,3 +18,25 @@ body {
 h2 {
   font-style: italic;
 }
+span {
+  text-transform: uppercase;
+}
+.spacing {
+  letter-spacing: -0.05em;
+}
+.blue {
+  line-height: 1.1;
+  border: solid blue;
+}
+.box {
+  width: 18em;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+.centre {
+  text-align: center;
+}
+.under {
+  text-decoration: underline dotted red;
+}
