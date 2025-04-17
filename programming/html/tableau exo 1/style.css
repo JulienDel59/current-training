@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 100%;
+  border: 1px solid orange;
+  border-collapse: collapse;
+}
+th {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 8px;
+}
+
+tr,
+td {
+  border: 1px solid orange;
+  padding: 8px;
+}
+
+caption {
+  border: 1px solid orange;
+  border-bottom: 0;
+  padding: 8px;
+}

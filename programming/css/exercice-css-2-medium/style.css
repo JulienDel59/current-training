@@ -2,22 +2,40 @@
   font-family: "Wastogi";
   src: url("./font/Wastogi.ttf");
 }
+
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
 .bungee-spice-regular {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-h1 {
-  font-family: "Wastogi", sans-serif;
-  font-size: normal;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
 }
 
-body {
-  font-family: "Gill Sans", sans-serif;
+h1 {
+  font-family: "Wastogi", sans-serif;
+  font-size: 2em;
 }
+
 h2 {
   font-style: italic;
+  font-size: 1.5em;
 }
+p {
+  line-height: 1.5em;
+}
+
 span {
   text-transform: uppercase;
 }
@@ -25,7 +43,7 @@ span {
   letter-spacing: -0.05em;
 }
 .blue {
-  line-height: 1.1;
+  line-height: 2;
   border: solid blue;
 }
 .box {
