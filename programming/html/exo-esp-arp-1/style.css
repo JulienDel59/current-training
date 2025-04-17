@@ -4,10 +4,16 @@ div {
   font-size: 5rem;
   font-weight: bolder;
 }
+
+p {
+  color: rgb(160, 7, 7);
+}
+
 .background-element {
-  background-color: aquamarine;
+  background-image: url(https://comment-apprendre-la-photo.fr/wp-content/uploads/2018/07/Belles-photo-de-plage-Ponton.jpg);
+  background-size: cover;
   height: 10em;
   width: 15em;
-  border: 4px solid black;
+  border: 4px solid rgb(150, 9, 9);
   margin: 26px;
 }
