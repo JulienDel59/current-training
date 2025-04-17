@@ -1,0 +1,13 @@
+div {
+  text-align: center;
+  font-style: italic;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+.background-element {
+  background-color: aquamarine;
+  height: 10em;
+  width: 15em;
+  border: 4px solid black;
+  margin: 26px;
+}
