@@ -5,30 +5,41 @@
 }
 
 h1 {
+  font-style: italic;
+  font-size: 3rem;
   text-align: center;
+  color: red;
 }
 
 .section1,
 .section2 {
   background-color: rgb(235, 231, 14);
-  background-position: center;
   opacity: 0.5;
-  height: 5em;
-  width: 16em;
+  margin: 25px;
+  height: 3em;
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-style: italic;
   font-size: 1rem;
   font-weight: bolder;
+  color: red;
 }
 
 .piedpage {
   background-color: black;
-  background-position: bottom;
-  height: 4em;
-  width: 100em;
+  height: 4vh;
   font-style: italic;
   font-size: 1rem;
   font-weight: bolder;
   color: aqua;
   text-align: center;
+}
+header {
+  height: 15vh;
+}
+
+main {
+  height: 80vh;
 }
