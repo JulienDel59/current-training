@@ -14,15 +14,15 @@
       </div>
       <div class="for">
         <form action="" method="post">
-          <p class="name">
+          <div class="name">
             <label for="username">Nom:</label>
             <input type="text" id="username" name="username" required />
-          </p>
-          <p class="email">
-            <label for="email">Emai:</label>
-            <input type="email" id="email" name="email" required />
-          </p>
-          <p class="sujet">
+          </div>
+          <div class="email">
+            <label class="box" for="email">Emai:</label>
+            <input class="box" type="email" id="email" name="email" required />
+          </div>
+          <div class="sujet">
             <label for="Sujet">Sujet:</label>
             <select id="Sujet" name="demande" required>
               <option value="">Choisissez une demande</option>
@@ -30,8 +30,8 @@
               <option value="RDV">Demande de RDV</option>
               <option value="Doc">Demande de Document</option>
             </select>
-          </p>
-          <p class="message">
+          </div>
+          <div class="message">
             <label for="message">Message:</label>
             <textarea
               id="message"
@@ -40,8 +40,8 @@
               cols="50"
               required
             ></textarea>
-          </p>
-          <p class="accepte">
+          </div>
+          <div class="accepte">
             <label for="accepte"></label>
             <input
               type="checkbox"
@@ -49,10 +49,10 @@
               name="accepte"
               required
             />J'accepte les conditions d'utilisation
-          </p>
-          <p>
+          </div>
+          <div>
             <button type="submit">Valider</button>
-          </p>
+          </div>
         </form>
       </div>
     </main>

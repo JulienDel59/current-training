@@ -22,30 +22,29 @@ h1 {
 }
 
 body {
-  background-color: rosybrown;
+  background-color: rgb(172, 117, 226);
 }
 
 .name {
   height: 5em;
-  width: 10em;
 }
 
 .email {
   height: 5em;
-  width: 10em;
 }
 
 .sujet {
   height: 5em;
-  width: 10em;
 }
 
 .message {
   height: 8em;
-  width: 10em;
 }
 
 .accepte {
   height: 5em;
-  width: 10em;
+}
+
+.box {
+  display: block;
 }
