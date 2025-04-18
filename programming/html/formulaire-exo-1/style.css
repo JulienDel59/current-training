@@ -1,0 +1,21 @@
+.formul {
+  background-color: rgb(255, 255, 255);
+  height: 50em;
+  width: 75em;
+  border: 5px solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.for {
+  margin-top: 100px;
+  text-align: start;
+}
