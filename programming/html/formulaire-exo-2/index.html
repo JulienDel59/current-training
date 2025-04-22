@@ -24,29 +24,32 @@
           <input type="email" id="email" name="email" required />
         </div>
         <div>
-          <label for="pass">Mot de passe:</label>
+          <label for="password">Mot de passe</label>
           <input
             type="password"
-            id="pass"
+            id="password"
             name="password"
-            minlength="8"
-            pattern=""
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
             required
           />
+          <p>
+            Le mot de passe doit contenir au moins 8 caratères,une majuscule,une
+            minuscule et un chiffre
+          </p>
         </div>
         <div>
-          <label for="pass">Confirmer le mot de passe</label>
+          <label for="confirmpass">Confirmer le mot de passe</label>
           <input
             type="password"
-            id="pass"
-            name="password"
-            minlength="8"
+            id="confirmpass"
+            name="confirmpasspassword"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
             required
           />
         </div>
         <div>
           <label for="date">Date de naissance</label>
-          <input type="date" id="date" name="date" />
+          <input type="date" id="date" name="date" required />
         </div>
         <div>
           <label for="genre1"></label>
@@ -59,14 +62,26 @@
         <div>
           <label for="pays">Pays</label>
           <select id="pays" name="pays" required>
-          <option value="">Selectionnez votre pays</option>
-          <option value="fr">France</option>
-          <option value="en">Royaume-Uni</option>
-          <option value="es">Espagne</option>
+            <option value="">Selectionnez votre pays</option>
+            <option value="fr">France</option>
+            <option value="en">Royaume-Uni</option>
+            <option value="es">Espagne</option>
+          </select>
         </div>
         <div>
           <label for="accepte"></label>
-          <input type="checkbox" id="accepte" name="accepte" />J'accepte les conditions et la politique de confidentialitè
+          <input type="checkbox" id="accepte" name="accepte" required />
+          J'accepte les conditions d'utilisation et la politique de
+          confidentialité
+        </div>
+        <div>
+          <label for="newsletter"></label>
+          <input type="checkbox" id="newsletter" name="newsletter" /> Je
+          souhaite recevoir la newsletter
+        </div>
+        <div>
+          <input type="reset" value="Réinitialiser" />
+          <button type="submit">S'inscrire</button>
         </div>
       </form>
     </main>
