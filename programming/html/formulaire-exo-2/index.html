@@ -10,7 +10,7 @@
   <body>
     <main class="formulaire">
       <h1>Créer un compte</h1>
-      <form class="form" action="" method="post">
+      <form class="form" method="post">
         <div class="prenom">
           <label class="label" for="username">Prénom</label>
           <input
@@ -18,12 +18,20 @@
             type="text"
             id="username"
             name="username"
+            placeholder="Prénom"
             required
           />
         </div>
         <div class="nom">
           <label class="label" for="name">Nom</label>
-          <input class="input" type="text" id="name" name="name" required />
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nom"
+            required
+          />
         </div>
         <div class="email">
           <label class="label" for="email">Email</label>
@@ -61,15 +69,15 @@
           <label class="label" for="date">Date de naissance</label>
           <input class="input" type="date" id="date" name="date" required />
         </div>
-        <div class="genre">
-          <p class="label">Genre</p>
-          <label for="genre1"></label>
-          <input type="checkbox" id="genre1" name="genre" />Homme
-          <label for="genre1"></label>
-          <input type="checkbox" id="genre2" name="genre" />Femme
-          <label for="genre1"></label>
-          <input type="checkbox" id="genre3" name="genre" />Autre
-        </div>
+        <fieldset class="genre">
+          <legend class="label">Genre</legend>
+          <label for="genre1">Homme</label>
+          <input type="radio" id="genre1" name="genre" value="homme" required />
+          <label for="genre2">Femme</label>
+          <input type="radio" id="genre2" name="genre" value="femme" required />
+          <label for="genre3">Autre</label>
+          <input type="radio" id="genre3" name="genre" value="autre" required />
+        </fieldset>
         <div class="pays">
           <label class="label" for="pays">Pays</label>
           <select class="input" id="pays" name="pays" required>
@@ -91,7 +99,7 @@
           souhaite recevoir la newsletter
         </div>
         <div class="bouton">
-          <input type="reset" value="Réinitialiser" />
+          <input class="reset" type="reset" value="Réinitialiser" />
           <button type="submit">S'inscrire</button>
         </div>
       </form>
