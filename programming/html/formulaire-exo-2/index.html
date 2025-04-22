@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Exo 2 formulaire</title>
+  </head>
+  <body>
+    <main>
+      <h1>Créer un compte</h1>
+      <form action="" method="post">
+        <div>
+          <label for="username">Prénom</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div>
+          <label for="username">Nom</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Emai</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="pass">Mot de passe:</label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            minlength="8"
+            pattern=""
+            required
+          />
+        </div>
+        <div>
+          <label for="pass">Confirmer le mot de passe</label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            minlength="8"
+            required
+          />
+        </div>
+        <div>
+          <label for="date">Date de naissance</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <div>
+          <label for="genre1"></label>
+          <input type="checkbox" id="genre1" name="genre" />Homme
+          <label for="genre1"></label>
+          <input type="checkbox" id="genre2" name="genre" />Femme
+          <label for="genre1"></label>
+          <input type="checkbox" id="genre3" name="genre" />Autre
+        </div>
+        <div>
+          <label for="pays">Pays</label>
+          <select id="pays" name="pays" required>
+          <option value="">Selectionnez votre pays</option>
+          <option value="fr">France</option>
+          <option value="en">Royaume-Uni</option>
+          <option value="es">Espagne</option>
+        </div>
+        <div>
+          <label for="accepte"></label>
+          <input type="checkbox" id="accepte" name="accepte" />J'accepte les conditions et la politique de confidentialitè
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
