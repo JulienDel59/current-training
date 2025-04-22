@@ -35,7 +35,14 @@
         </div>
         <div class="email">
           <label class="label" for="email">Email</label>
-          <input class="input" type="email" id="email" name="email" required />
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@exp.com"
+            required
+          />
         </div>
         <div class="password">
           <label class="label" for="password">Mot de passe</label>
@@ -45,6 +52,7 @@
             id="password"
             name="password"
             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+            placeholder="Mot de passe"
             required
           />
           <p class="mdpcons">
@@ -62,6 +70,7 @@
             id="confirmpass"
             name="confirmpasspassword"
             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+            placeholder="Confirmer mot de passe"
             required
           />
         </div>
