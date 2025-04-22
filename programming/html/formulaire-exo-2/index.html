@@ -12,34 +12,44 @@
       <h1>Créer un compte</h1>
       <form class="form" action="" method="post">
         <div class="prenom">
-          <label for="username">Prénom</label>
-          <input type="text" id="username" name="username" required />
+          <label class="label" for="username">Prénom</label>
+          <input
+            class="input"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
         </div>
         <div class="nom">
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="name" required />
+          <label class="label" for="name">Nom</label>
+          <input class="input" type="text" id="name" name="name" required />
         </div>
         <div class="email">
-          <label for="email">Emai</label>
-          <input type="email" id="email" name="email" required />
+          <label class="label" for="email">Email</label>
+          <input class="input" type="email" id="email" name="email" required />
         </div>
         <div class="password">
-          <label for="password">Mot de passe</label>
+          <label class="label" for="password">Mot de passe</label>
           <input
+            class="input"
             type="password"
             id="password"
             name="password"
             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
             required
           />
-          <p>
+          <p class="mdpcons">
             Le mot de passe doit contenir au moins 8 caratères,une majuscule,une
             minuscule et un chiffre
           </p>
         </div>
         <div class="confirm">
-          <label for="confirmpass">Confirmer le mot de passe</label>
+          <label class="label" for="confirmpass"
+            >Confirmer le mot de passe</label
+          >
           <input
+            class="input"
             type="password"
             id="confirmpass"
             name="confirmpasspassword"
@@ -48,10 +58,11 @@
           />
         </div>
         <div class="date">
-          <label for="date">Date de naissance</label>
-          <input type="date" id="date" name="date" required />
+          <label class="label" for="date">Date de naissance</label>
+          <input class="input" type="date" id="date" name="date" required />
         </div>
         <div class="genre">
+          <p class="label">Genre</p>
           <label for="genre1"></label>
           <input type="checkbox" id="genre1" name="genre" />Homme
           <label for="genre1"></label>
@@ -60,8 +71,8 @@
           <input type="checkbox" id="genre3" name="genre" />Autre
         </div>
         <div class="pays">
-          <label for="pays">Pays</label>
-          <select id="pays" name="pays" required>
+          <label class="label" for="pays">Pays</label>
+          <select class="input" id="pays" name="pays" required>
             <option value="">Selectionnez votre pays</option>
             <option value="fr">France</option>
             <option value="en">Royaume-Uni</option>

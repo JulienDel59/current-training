@@ -9,47 +9,76 @@ body {
 
 .formulaire {
   background-color: white;
-  height: 60em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 70em;
   width: 50em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  border-radius: 2%;
+  padding: 20px;
 }
 
 .form {
   margin-top: 100px;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
 }
 
 .prenom {
+  height: 5em;
 }
 
 .nom {
+  height: 5em;
 }
 
 .email {
+  height: 5em;
 }
 
 .password {
+  height: 5em;
 }
 
 .confirm {
+  height: 5em;
 }
 
 .date {
+  height: 5em;
 }
 
 .genre {
+  height: 5em;
 }
 
 .pays {
+  height: 5em;
 }
 
 .accepte {
+  height: 2em;
 }
 
 .news {
+  height: 4em;
 }
 
 .bouton {
+  height: 5em;
+}
+
+.mdpcons {
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Courier New, monospace;
 }
