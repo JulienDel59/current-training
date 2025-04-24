@@ -5,13 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   color: aliceblue;
+  padding: 15px;
   font-size: 18px;
 }
 
 .lien {
   display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
 
 main {
@@ -28,4 +30,8 @@ h1 {
   font-size: 50px;
   font-weight: bolder;
   margin-bottom: 40px;
+}
+
+body {
+  font-family: Palatino, URW Palladio L, serif;
 }
