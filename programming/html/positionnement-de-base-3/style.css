@@ -1,0 +1,11 @@
+.tete {
+  background-color: rgba(4, 4, 59, 0.842);
+  width: 100%;
+  min-height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  padding: 15px;
+  font-size: 18px;
+}
