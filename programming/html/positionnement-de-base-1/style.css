@@ -5,7 +5,6 @@
   object-position: center;
   position: relative;
   color: #fff;
-  opacity: 0.9;
 }
 
 .overlay {
@@ -16,7 +15,6 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.158);
 }
-
 .contenu {
   position: absolute;
   top: 0;
