@@ -1,5 +1,9 @@
+body {
+  font-family: Palatino, URW Palladio L, serif;
+}
+
 .tete {
-  background-color: rgba(4, 4, 59, 0.842);
+  background-color: rgba(7, 7, 88, 0.884);
   width: 100%;
   min-height: 110px;
   display: flex;
@@ -20,12 +24,9 @@
   gap: 15px;
 }
 
-body {
-  font-family: Palatino, URW Palladio L, serif;
-}
 main {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: 100vh;
   background-color: rgba(128, 128, 128, 0.171);
   display: flex;
   flex-direction: column;
@@ -37,14 +38,49 @@ main {
 h1 {
   font-size: 45px;
   font-weight: bolder;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .bienvenue {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-s button {
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin: 40px;
+}
+
+.propos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+}
+
+button {
   background-color: #cbce09;
   border-radius: 6px;
   border-width: 1px;
@@ -71,13 +107,11 @@ a:focus {
 a:hover {
   color: gold;
 }
-
 .foot {
   background-color: rgba(4, 4, 59, 0.842);
-  width: 100%;
-  height: 50px;
-  bottom: 0;
   color: #ffffff;
+  height: 50px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
