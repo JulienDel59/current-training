@@ -8,4 +8,77 @@
   color: aliceblue;
   padding: 15px;
   font-size: 18px;
+  position: fixed;
+  top: 0;
+}
+
+.lien {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+body {
+  font-family: Palatino, URW Palladio L, serif;
+}
+main {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background-color: rgba(128, 128, 128, 0.171);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.bienvenue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+s button {
+  background-color: #cbce09;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(128, 12, 12);
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(3, 85, 7);
+}
+
+a {
+  color: bisque;
+}
+
+a:focus {
+  color: aqua;
+}
+
+a:hover {
+  color: gold;
+}
+
+.foot {
+  background-color: rgba(4, 4, 59, 0.842);
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
