@@ -1,6 +1,7 @@
 body {
   font-family: Palatino, URW Palladio L, serif;
   padding-top: 110px;
+  line-height: 1.5;
 }
 
 .tete {
@@ -187,7 +188,5 @@ a:hover {
 .foot {
   background-color: rgba(4, 4, 59, 0.842);
   color: #ffffff;
-  height: 40px;
-  width: 100%;
   display: flex;
 }
