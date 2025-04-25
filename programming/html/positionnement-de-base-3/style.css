@@ -1,11 +1,12 @@
 body {
   font-family: Palatino, URW Palladio L, serif;
+  padding-top: 110px;
 }
 
 .tete {
   background-color: rgba(7, 7, 88, 0.884);
   width: 100%;
-  min-height: 110px;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +15,10 @@ body {
   font-size: 18px;
   position: fixed;
   top: 0;
+}
+
+.section {
+  padding: 55px;
 }
 
 .lien {
@@ -27,11 +32,6 @@ body {
 main {
   width: 100%;
   height: 100vh;
-  background-color: rgba(128, 128, 128, 0.171);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -45,39 +45,33 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #cbce09;
 }
 
 .service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px;
+  background: rgb(139, 139, 139);
 }
 
 .portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  margin: 40px;
+  background: #cbce09;
 }
 
 .propos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px;
+  background-color: rgb(139, 139, 139);
 }
 
 .contact {
+  background-color: #cbce09;
+}
+
+.card {
+  border: 5px solid green;
+}
+
+.card-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px;
+  justify-content: space-around;
+  gap: 50px;
 }
 
 button {
