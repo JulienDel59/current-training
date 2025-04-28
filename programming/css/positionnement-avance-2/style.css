@@ -4,7 +4,8 @@
     "tete tete tete"
     "nav principal sidbar"
     "pied pied pied";
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
+  gap: 5px;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
 .principal {
   background-color: rgba(209, 209, 195, 0.548);
   grid-area: principal;
+  text-align: center;
 }
 
 .sidbar {
