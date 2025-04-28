@@ -21,21 +21,62 @@ body {
 .nav {
   background-color: rgba(163, 142, 142, 0.281);
   grid-area: nav;
+  list-style-type: none;
 }
-
-.principal {
+main {
   background-color: rgba(209, 209, 195, 0.548);
+}
+.principal {
   grid-area: principal;
-  text-align: center;
+  margin: 0 10%;
 }
 
 .sidbar {
-  background-color: rgba(163, 142, 142, 0.281);
+  background-color: rgba(41, 30, 30, 0.281);
   grid-area: sidbar;
+  padding: 10px;
 }
 
 .pied {
   background-color: rgb(4, 14, 70);
   grid-area: pied;
   color: aliceblue;
+}
+
+.contenu-p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.cpb {
+  grid-column: span 2;
+}
+
+.container-button {
+  grid-column: span 2;
+}
+
+.articles {
+  padding: 20px;
+}
+
+.news {
+  padding: 20px;
+}
+
+.categories {
+  padding: 20px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+h3 {
+  padding: 10px;
+}
+
+.nolist {
+  list-style-type: none;
 }
