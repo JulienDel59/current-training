@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "tete tete tete"
+    "nav principal sidbar"
+    "pied pied pied";
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.tete {
+  background-color: rgb(4, 14, 70);
+  color: aliceblue;
+  grid-area: tete;
+}
+
+.nav {
+  background-color: rgba(163, 142, 142, 0.281);
+  grid-area: nav;
+}
+
+.principal {
+  background-color: rgba(209, 209, 195, 0.548);
+  grid-area: principal;
+}
+
+.sidbar {
+  background-color: rgba(163, 142, 142, 0.281);
+  grid-area: sidbar;
+}
+
+.pied {
+  background-color: rgb(4, 14, 70);
+  grid-area: pied;
+  color: aliceblue;
+}

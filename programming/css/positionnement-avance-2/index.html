@@ -7,25 +7,25 @@
     <link href="style.css" rel="stylesheet" />
     <title>Positionnement avancé 2</title>
   </head>
-  <body>
-    <header>
+  <body class="container">
+    <header class="tete">
+      <img src="logo.png" />
       <h1>EcoDesign</h1>
-      <img src="" />
     </header>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#propos">A propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <main>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#propos">A propos</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section>
+      <section class="principal">
         <div>
           <h2>Conception web écologique</h2>
           <p>Publié le 21 avril 2025</p>
@@ -89,43 +89,43 @@
           <button type="submit">En savoir plus</button>
         </div>
       </section>
-      <section>
-        <div>
-          <h3>Articles récents</h3>
-          <p>Optimisation des images pour le web</p>
-          <p>Comment réduire la consomation d'énergie de votre site</p>
-          <p>L'impact environnemental du streaming video</p>
-          <p>10 astuce pour un code plus propre</p>
-        </div>
-        <div>
-          <h3>Newsletter</h3>
-          <p>
-            Recevez nos conseils pour web plus vert directement dans votre boite
-            mail.
-          </p>
-          <form method="post">
-            <label for="email">Email</label>
-            <input
-              class="input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="exemple@exp.com"
-              required
-            />
-            <button type="submit">S'abonner</button>
-          </form>
-        </div>
-        <div>
-          <h3>Catégories</h3>
-          <button type="submit">Développement</button>
-          <button type="submit">Design</button>
-          <button type="submit">Performances</button>
-          <button type="submit">SEO</button>
-        </div>
-      </section>
     </main>
-    <footer>
+    <section class="sidbar">
+      <div>
+        <h3>Articles récents</h3>
+        <p>Optimisation des images pour le web</p>
+        <p>Comment réduire la consomation d'énergie de votre site</p>
+        <p>L'impact environnemental du streaming video</p>
+        <p>10 astuce pour un code plus propre</p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <p>
+          Recevez nos conseils pour web plus vert directement dans votre boite
+          mail.
+        </p>
+        <form method="post">
+          <label for="email">Email</label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@exp.com"
+            required
+          />
+          <button type="submit">S'abonner</button>
+        </form>
+      </div>
+      <div>
+        <h3>Catégories</h3>
+        <button type="submit">Développement</button>
+        <button type="submit">Design</button>
+        <button type="submit">Performances</button>
+        <button type="submit">SEO</button>
+      </div>
+    </section>
+    <footer class="pied">
       <div>
         <h4>EcoDesign</h4>
         <p>Pour un web plus répectueux de notre planête</p>
@@ -148,13 +148,13 @@
       </div>
       <div>
         <h4>Suivez-nous</h4>
-        <img src="" />
-        <img src="" />
-        <img src="" />
-        <img src="" />
+        <img src="faceb.svg" />
+        <img src="ind.svg" />
+        <img src="insta.svg" />
+        <img src="twit.svg" />
       </div>
       <div>
-        <p>2025 EcoDesign. Tout droits réservés.</p>
+        <p>&copy; 2025 EcoDesign. Tout droits réservés.</p>
       </div>
     </footer>
   </body>
