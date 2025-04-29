@@ -5,7 +5,6 @@
     "nav principal sidbar"
     "pied pied pied";
   grid-template-columns: 1fr 6fr 1fr;
-  gap: 5px;
 }
 
 body {
@@ -25,6 +24,7 @@ body {
   grid-area: nav;
   list-style-type: none;
   line-height: 40px;
+  border-right: solid rgba(138, 128, 128, 0.233) 1px;
 }
 main {
   background-color: rgba(209, 209, 195, 0.548);
@@ -38,6 +38,7 @@ main {
   background-color: rgba(163, 142, 142, 0.281);
   grid-area: sidbar;
   padding: 20px;
+  border-left: solid rgba(138, 128, 128, 0.233) 1px;
 }
 
 .pied {
@@ -57,6 +58,8 @@ main {
 .droit {
   grid-column: span 4;
   text-align: center;
+  border-top: solid rgba(138, 128, 128, 0.664) 1px;
+  padding: 15px;
 }
 
 .contenu-p {
@@ -107,10 +110,12 @@ main {
 
 .articles {
   padding: 20px;
+  border-bottom: solid rgba(138, 128, 128, 0.664) 1px;
 }
 
 .news {
   padding: 20px;
+  border-bottom: solid rgba(138, 128, 128, 0.664) 1px;
 }
 
 .categories {
@@ -144,8 +149,9 @@ h4 {
   list-style-type: none;
 }
 
-.suivez-nous {
+.ens-icon {
   display: flex;
+  gap: 10px;
 }
 
 .icon {
