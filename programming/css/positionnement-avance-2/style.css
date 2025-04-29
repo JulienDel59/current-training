@@ -13,6 +13,8 @@ body {
 }
 
 .tete {
+  display: flex;
+  gap: 10px;
   background-color: rgb(4, 14, 70);
   color: aliceblue;
   grid-area: tete;
@@ -38,15 +40,26 @@ main {
 }
 
 .pied {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   background-color: rgb(4, 14, 70);
   grid-area: pied;
   color: aliceblue;
 }
 
+.elsc {
+  grid-column: span 4;
+}
+
+.droit {
+  grid-column: span 4;
+  text-align: center;
+}
+
 .contenu-p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 .cpb {
@@ -55,6 +68,7 @@ main {
 
 .container-button {
   grid-column: span 2;
+  text-align: center;
 }
 
 .articles {
@@ -70,11 +84,21 @@ main {
 }
 
 h2 {
-  padding: 10px;
+  padding: 5px;
 }
 
 h3 {
-  padding: 10px;
+  padding: 5px;
+}
+
+.pt0 {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: small;
+}
+
+.pt {
+  margin-bottom: 30px;
 }
 
 .nolist {
