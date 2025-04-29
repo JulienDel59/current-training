@@ -26,6 +26,7 @@ body {
   line-height: 40px;
   border-right: solid rgba(138, 128, 128, 0.233) 1px;
 }
+
 main {
   background-color: rgba(209, 209, 195, 0.548);
 }
@@ -49,6 +50,7 @@ main {
   color: aliceblue;
   font-size: small;
   gap: 50px;
+  padding: 20px;
 }
 
 .elsc {
@@ -59,7 +61,7 @@ main {
   grid-column: span 4;
   text-align: center;
   border-top: solid rgba(138, 128, 128, 0.664) 1px;
-  padding: 15px;
+  padding-top: 20px;
 }
 
 .contenu-p {
@@ -158,12 +160,19 @@ h4 {
   width: 10%;
 }
 
-a:hover {
+.lien1 > li:hover {
   background-color: green;
-  border: solid;
   border-radius: 10px;
 }
 
-a:visited {
-  color: rgb(132, 204, 204);
+.lien2 {
+  line-height: 20px;
+}
+
+a:hover {
+  color: gold;
+}
+
+a {
+  padding: 20px;
 }
