@@ -165,6 +165,7 @@ h4 {
 .lien1 > li:hover {
   background-color: green;
   border-radius: 10px;
+  display: none;
 }
 
 .lien2 {
@@ -177,18 +178,4 @@ a:hover {
 
 a {
   padding: 20px;
-}
-
-.menu-humbergeur {
-  display: none;
-  width: 3%;
-  position: absolute;
-  right: 10px;
-  padding-top: 3px;
-}
-
-@media screen and (max-width: 1260px) {
-  .menu-humbergeur {
-    display: block;
-  }
 }
