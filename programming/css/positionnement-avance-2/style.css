@@ -15,7 +15,7 @@ body {
 .tete {
   display: flex;
   gap: 10px;
-  background-color: rgb(4, 14, 70);
+  background-color: rgba(4, 14, 70, 0.781);
   color: aliceblue;
   grid-area: tete;
 }
@@ -34,7 +34,7 @@ main {
 }
 
 .sidbar {
-  background-color: rgba(41, 30, 30, 0.281);
+  background-color: rgba(163, 142, 142, 0.281);
   grid-area: sidbar;
   padding: 10px;
 }
@@ -42,9 +42,10 @@ main {
 .pied {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: rgb(4, 14, 70);
+  background-color: rgba(4, 14, 70, 0.781);
   grid-area: pied;
   color: aliceblue;
+  font-size: small;
 }
 
 .elsc {
@@ -66,9 +67,40 @@ main {
   grid-column: span 2;
 }
 
+.tc {
+  grid-column: span 2;
+  text-align: center;
+}
+
 .container-button {
   grid-column: span 2;
   text-align: center;
+}
+
+.bouton {
+  background-color: green;
+  color: aliceblue;
+  border-radius: 10px;
+  border: solid;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.abonner {
+  background-color: green;
+  color: aliceblue;
+  border-radius: 10px;
+  border: solid;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.cate {
+  border-radius: 10px;
+  border: solid;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .articles {
@@ -89,6 +121,11 @@ h2 {
 
 h3 {
   padding: 5px;
+  font-style: oblique;
+}
+
+h4 {
+  margin-bottom: 10px;
 }
 
 .pt0 {
@@ -103,4 +140,7 @@ h3 {
 
 .nolist {
   list-style-type: none;
+}
+
+.suivez-nous {
 }
