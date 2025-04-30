@@ -23,7 +23,7 @@ body {
   background-color: rgba(163, 142, 142, 0.281);
   grid-area: nav;
   list-style-type: none;
-  line-height: 40px;
+  line-height: 60px;
   border-right: solid rgba(138, 128, 128, 0.233) 1px;
 }
 
@@ -51,8 +51,8 @@ main {
   grid-area: pied;
   color: aliceblue;
   font-size: small;
-  padding: 20px 15px;
-  gap: 30px;
+  padding: 20px;
+  gap: 50px;
 }
 
 .elsc {
@@ -161,6 +161,11 @@ h4 {
 .icon {
   width: 10%;
 }
+.lien1 {
+  display: flex;
+  flex-direction: column;
+  /* padding: 30px; */
+}
 
 .lien1 > li:hover {
   background-color: green;
@@ -179,19 +184,36 @@ a {
   padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (width <= 768px) {
   .container {
     grid-template-areas:
       "tete"
       "nav"
       "principale"
       "sidbar"
-      "foot";
+      "pied";
     grid-template-columns: 1fr;
+  }
+  .lien1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .pied {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .ens-icon {
+    width: 20%;
+  }
+  .elc {
+    border-bottom: solid rgba(138, 128, 128, 0.664) 1px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (width >= 768px) and (width <= 1024px) {
   .container {
     grid-template-areas:
       "tete tete"
@@ -200,14 +222,9 @@ a {
       "pied pied";
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .container {
-    grid-template-areas:
-      "tete tete tete"
-      "nav principal sidbar"
-      "pied pied pied";
-    grid-template-columns: 1fr 6fr 1fr;
+  .lien1 {
+    display: flex;
+    flex-direction: row;
   }
 }
