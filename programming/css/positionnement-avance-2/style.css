@@ -165,7 +165,6 @@ h4 {
 .lien1 > li:hover {
   background-color: green;
   border-radius: 10px;
-  display: none;
 }
 
 .lien2 {
@@ -178,4 +177,37 @@ a:hover {
 
 a {
   padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "tete"
+      "nav"
+      "principale"
+      "sidbar"
+      "foot";
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "tete tete"
+      "nav nav"
+      "principal sidbar"
+      "pied pied";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-template-areas:
+      "tete tete tete"
+      "nav principal sidbar"
+      "pied pied pied";
+    grid-template-columns: 1fr 6fr 1fr;
+  }
 }
