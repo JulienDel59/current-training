@@ -48,6 +48,8 @@
 }
 
 .card {
+  background-size: cover;
+  background-position: center;
   padding: 20px;
   height: 40vh;
   margin: 5px;
