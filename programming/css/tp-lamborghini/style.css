@@ -50,9 +50,14 @@
   margin: 10px;
 }
 
-.imagev {
+.text-imagev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-size: cover;
+  align-items: center;
   background-position: center;
+  color: aliceblue;
   height: 20em;
 }
 
