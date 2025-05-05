@@ -38,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(228, 221, 214);
+  background-color: var(--background-color);
   border-radius: 5px;
 }
 
@@ -86,7 +86,7 @@ h3 {
 }
 
 footer {
-  background-color: rgb(230, 219, 219);
+  background-color: var(--vtt-background-color);
   text-align: center;
   padding: 10px;
 }
