@@ -1,84 +1,103 @@
+:root {
+  --body-background-color: rgb(255, 255, 255);
+  --header-btn-background-color: rgb(255, 255, 255);
+  --vtt-background-color: rgba(211, 187, 187, 0.308);
+  --color: rgb(60, 91, 192);
+  --foot-sombre-background-color: rgba(211, 187, 187, 0.308);
+}
+
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--body-background-color);
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 p {
-    color: rgba(92, 86, 86, 0.767)
+  color: rgba(92, 86, 86, 0.767);
 }
 
 .header {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    color: rgb(60, 91, 192);
-    box-shadow: 5px 2px 5px rgba(71, 69, 69, 0.712);
+  background-color: var(--header-btn-background-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  color: var(--color);
+  box-shadow: 5px 2px 5px rgba(71, 69, 69, 0.712);
 }
 
 button {
-    background-color: rgb(255, 255, 255);
-    color:rgb(60, 91, 192);
-    border: none;
-    margin: 10px;
+  background-color: var(--header-btn-background-color);
+  color: var(--color);
+  border: none;
+  margin: 10px;
 }
 
 button:hover {
-    background-color: rgb(228, 221, 214);
-    border-radius: 5px;
+  background-color: rgb(228, 221, 214);
+  border-radius: 5px;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .bienvenue {
-    margin: 100px;
+  margin: 100px;
 }
 
 h3 {
-    color:rgb(60, 91, 192);
+  color: rgb(60, 91, 192);
 }
 
 .var-them-trans {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
 .variables {
-    background-color: rgba(211, 187, 187, 0.308);
-    border-radius: 10px;
-    margin: 20px;
-    width: 300px;
-    padding: 15px;
+  background-color: var(--vtt-background-color);
+  border-radius: 10px;
+  margin: 20px;
+  width: 300px;
+  padding: 15px;
 }
 
 .theme {
-    background-color: rgba(211, 187, 187, 0.308);
-    border-radius: 10px;
-    margin: 20px;
-    width: 300px;
-    padding: 15px;
+  background-color: var(--vtt-background-color);
+  border-radius: 10px;
+  margin: 20px;
+  width: 300px;
+  padding: 15px;
 }
 
 .transitions {
-    background-color: rgba(211, 187, 187, 0.308);
-    border-radius: 10px;
-    margin: 20px;
-    width: 300px;
-    padding: 15px;
+  background-color: var(--vtt-background-color);
+  border-radius: 10px;
+  margin: 20px;
+  width: 300px;
+  padding: 15px;
 }
 
 footer {
-    background-color: rgb(230, 219, 219);
-    text-align: center;
-    padding: 10px;
+  background-color: rgb(230, 219, 219);
+  text-align: center;
+  padding: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: rgb(24, 22, 22);
+  }
+
+  body {
+    background-color: var(--body-background-color);
+  }
 }
