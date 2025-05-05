@@ -1,6 +1,7 @@
 .background {
   background-size: cover;
   background-position: center;
+  height: 40em;
 }
 
 .background-responsive {
@@ -26,4 +27,8 @@
   display: flex;
   list-style: none;
   gap: 10px;
+}
+
+body {
+  margin: 0;
 }

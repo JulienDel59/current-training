@@ -1,6 +1,5 @@
 :root {
-  --body-background-color: rgb(255, 255, 255);
-  --header-btn-background-color: rgb(255, 255, 255);
+  --background-color: rgb(255, 255, 255);
   --vtt-background-color: rgba(211, 187, 187, 0.308);
   --color: rgb(60, 91, 192);
   --foot-sombre-background-color: rgba(211, 187, 187, 0.308);
@@ -16,11 +15,11 @@ h1 {
 }
 
 p {
-  color: rgba(92, 86, 86, 0.767);
+  color: rgba(134, 125, 125, 0.767);
 }
 
 .header {
-  background-color: var(--header-btn-background-color);
+  background-color: var(--background-color);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -32,7 +31,7 @@ p {
 }
 
 button {
-  background-color: var(--header-btn-background-color);
+  background-color: var(--background-color);
   color: var(--color);
   border: none;
   margin: 10px;
@@ -94,14 +93,23 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-background-color: rgb(24, 22, 22);
+    --dark-background-color: rgb(24, 22, 22);
+    --color-h1: rgb(240, 227, 227);
   }
 
   body {
-    background-color: var(--body-background-color);
+    background-color: var(--dark-background-color);
   }
 
   .header {
-    background-color: var(--body-background-color);
+    background-color: var(--dark-background-color);
+  }
+
+  button {
+    background-color: var(--dark-background-color);
+  }
+
+  h1 {
+    color: var(--color-h1);
   }
 }
