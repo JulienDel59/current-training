@@ -29,6 +29,53 @@
   gap: 10px;
 }
 
-body {
-  margin: 0;
+.huracan-urus {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-lien {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 5px;
+}
+
+.imagev {
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+}
+
+.image1 {
+  background-image: url("images/image1.jpg");
+}
+
+.image2 {
+  background-image: url("images/image2.jpg");
+}
+
+.image3 {
+  background-image: url("images/image3.jpg");
+}
+
+.image4 {
+  background-image: url("images/image4.jpg");
+}
+
+.image5 {
+  background-image: url("images/image5.jpg");
+}
+
+.image6 {
+  background-image: url("images/image6.jpg");
 }
