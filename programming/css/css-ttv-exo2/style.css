@@ -1,0 +1,84 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    color: rgba(92, 86, 86, 0.767)
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(60, 91, 192);
+    box-shadow: 5px 2px 5px rgba(71, 69, 69, 0.712);
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color:rgb(60, 91, 192);
+    border: none;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(228, 221, 214);
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+}
+
+.bienvenue {
+    margin: 100px;
+}
+
+h3 {
+    color:rgb(60, 91, 192);
+}
+
+.var-them-trans {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 80px;
+}
+
+.variables {
+    background-color: rgba(211, 187, 187, 0.308);
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    padding: 15px;
+}
+
+.theme {
+    background-color: rgba(211, 187, 187, 0.308);
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    padding: 15px;
+}
+
+.transitions {
+    background-color: rgba(211, 187, 187, 0.308);
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    padding: 15px;
+}
+
+footer {
+    background-color: rgb(230, 219, 219);
+    text-align: center;
+    padding: 10px;
+}

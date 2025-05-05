@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(153, 185, 212);
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 24px; 
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    background-color: blue;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    width: 180px;
+    height: 50px;
+    transition: background-color 2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #292c2e;
+    transform: scale(1.05);
+
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+  }
+
+.btn-secondary {
+    background-color: gray;
+    border-radius: 5px;
+    color: aliceblue;
+    width: 180px;
+    height: 50px;
+    transition: box-shadow 2s ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 10px 5px 5px;
+}
+
+.btn-secondary:active {
+    box-shadow: 10px 5px 5px red;
+   
+}
+
+
+.btn-danger {
+    background-color: red;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: antiquewhite;
+    width: 180px;
+    height: 50px;
+    transition: transform 0.5s ease-in;
+}
+
+.btn-danger:hover {
+    transform: rotate(10deg);
+}
+
+.btn-danger:active {
+    transform: rotate(0.5turn) ; 
+}
