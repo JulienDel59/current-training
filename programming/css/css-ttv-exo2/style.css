@@ -100,4 +100,8 @@ footer {
   body {
     background-color: var(--body-background-color);
   }
+
+  .header {
+    background-color: var(--body-background-color);
+  }
 }

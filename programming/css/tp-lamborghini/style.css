@@ -1,0 +1,29 @@
+.background {
+  background-size: cover;
+  background-position: center;
+}
+
+.background-responsive {
+}
+
+.background-huracan {
+  background-image: url("./images/background1.jpg");
+}
+
+.background-urus {
+  background-image: url("./images/background2.jpg");
+}
+
+.container-header {
+  background: rgb(70, 70, 70, 0.713);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
