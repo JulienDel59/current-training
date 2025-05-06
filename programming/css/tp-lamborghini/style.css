@@ -61,6 +61,7 @@ html {
   color: antiquewhite;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 }
 
 .header-link:hover {
@@ -77,6 +78,7 @@ html {
 .dropdown-button:hover .dropdown-menu {
   display: block;
   position: absolute;
+  z-index: 1;
   top: 30px;
   left: 0;
   list-style: none;
