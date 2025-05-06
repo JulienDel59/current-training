@@ -8,6 +8,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
   color: aliceblue;
 }
 
@@ -15,6 +16,10 @@ html {
   background-size: cover;
   background-position: center;
   min-height: 40em;
+}
+
+.background {
+  position: relative;
 }
 
 .background-huracan {
@@ -90,6 +95,7 @@ html {
 .card {
   background-size: cover;
   background-position: center;
+  position: relative;
   padding: 20px;
   height: 40vh;
   margin: 5px;
@@ -121,6 +127,7 @@ html {
 
 .grid-footer {
   display: grid;
+  place-items: center;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   border-top: 2px solid white;
@@ -138,6 +145,7 @@ html {
 }
 
 .overlay::after {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -149,20 +157,8 @@ html {
   background-color: rgba(206, 14, 14, 0.685);
 }
 
-.overlay-white {
+.overlay-white::after {
   background-color: rgba(255, 255, 255, 0.815);
-}
-
-@media screen and (width <=768px) {
-  .img-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .container-header {
-    justify-content: center;
-  }
-  .container-footer {
-    padding: 20px;
-  }
 }
 
 .menu-humburger {
@@ -178,6 +174,22 @@ html {
   width: 44px;
 }
 
-#menu-mobil: checked ~.nav-menu {
+#menu-mobil:checked ~ .nav-menu {
   display: block;
+}
+
+@media screen and (width <=768px) {
+  .img-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-header {
+    justify-content: center;
+  }
+  .container-footer {
+    padding: 20px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
 }
