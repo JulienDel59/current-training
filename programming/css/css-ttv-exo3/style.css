@@ -74,6 +74,10 @@ body {
   width: 44px;
 }
 
+.menu-humburger:active {
+  transform: rotate(45deg);
+}
+
 #menu-mobil:checked ~ .nav-menu {
   display: block;
 }
