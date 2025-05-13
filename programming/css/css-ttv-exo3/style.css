@@ -1,5 +1,6 @@
 :root {
   --text-color: rgba(11, 138, 11, 0.938);
+  --background-color: rgba(137, 43, 226, 0.411);
 }
 
 body {
@@ -57,7 +58,7 @@ body {
 }
 
 .div-lien:hover {
-  background-color: rgba(137, 43, 226, 0.411);
+  background-color: var(--background-color);
   padding: 10px;
   border-radius: 5px;
 }
@@ -66,19 +67,17 @@ body {
   display: none;
   position: absolute;
   list-style: none;
-  background-color: rgba(173, 169, 169, 0.267);
-  border-radius: 10px;
-  margin-left: 30px;
+  text-align: center;
+  border-radius: 5px;
   top: 60px;
   padding: 10px;
+  width: 135px;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .dropdown-button:hover .dropdown-menu {
   display: block;
-}
-
-.trait {
-  transition: transform 0.5s ease;
 }
 
 .menu-humburger {
@@ -86,6 +85,10 @@ body {
   flex-direction: column;
   gap: 10px;
   margin-right: 20px;
+}
+
+.trait {
+  transition: transform 0.5s ease;
 }
 
 .menu-humburger > .trait {
