@@ -74,16 +74,26 @@ body {
   width: 44px;
 }
 
-.menu-humburger:active {
-  transform: rotate(45deg);
-}
-
 #menu-mobil:checked ~ .nav-menu {
   display: block;
 }
 
 #menu-mobil {
   display: none;
+}
+
+#menu-mobil:checked + .menu-humburger > .trait1 {
+  transform: rotate(45deg);
+  transform-origin: 10%;
+}
+
+#menu-mobil:checked + .menu-humburger > .trait2 {
+  opacity: 0;
+}
+
+#menu-mobil:checked + .menu-humburger > .trait3 {
+  transform: rotate(-45deg);
+  transform-origin: 10%;
 }
 
 @media screen and (max-width: 768px) {
