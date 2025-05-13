@@ -36,7 +36,6 @@ body {
   margin-right: 30px;
   font-style: italic;
   font-size: 18px;
-  color: var(--text-color);
 }
 
 .icon-nav {
@@ -50,6 +49,14 @@ body {
 
 .lien {
   text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+}
+
+.lien:hover {
+  background-color: rgba(137, 43, 226, 0.411);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .dropdown-menu {
