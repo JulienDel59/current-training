@@ -67,6 +67,10 @@ body {
   margin-right: 25px;
 }
 
+.trait {
+  transition: transform 0.3s ease;
+}
+
 .menu-humburger > .trait {
   display: block;
   background-color: rgb(27, 107, 27);
