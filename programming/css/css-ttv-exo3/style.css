@@ -58,15 +58,15 @@ body {
 }
 
 .div-lien {
-  height: 20px;
-  transition: height 3s;
-}
-
-.div-lien:hover {
   background-color: var(--background-color);
   padding: 10px;
   border-radius: 5px;
-  height: 100px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.div-lien:hover {
+  background-color: purple;
+  transform: scale(1.05);
 }
 
 .dropdown-menu {
@@ -79,7 +79,7 @@ body {
   padding: 10px;
   width: 135px;
   color: var(--text-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
 }
 
 .dropdown-button:hover .dropdown-menu {
