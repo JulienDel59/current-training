@@ -1,0 +1,31 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  gap: 40px;
+}
+
+:root {
+  --couleur-primaire: #c01313;
+  --couleur-secondaire: #f3f3f3;
+  --duree-animation: 5s;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--couleur-secondaire);
+  border-top: 5px solid var(--couleur-primaire);
+  border-radius: 50%;
+  animation: rotation var(--duree-animation) linear infinite alternate;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(640deg);
+  }
+}
