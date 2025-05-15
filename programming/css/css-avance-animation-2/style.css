@@ -1,5 +1,13 @@
 :root {
-  --text-color: rgb(209, 13, 13);
+  --text-color-titre: rgb(209, 13, 13);
+  --fadeinup-delay-card1: 0.4s;
+  --fadeinup-delay-card2: 0.8s;
+  --fadeinup-delay-card3: 1.2s;
+}
+
+h1,
+h2 {
+  color: var(--text-color-titre);
 }
 
 .section-grille {
@@ -15,6 +23,44 @@
   gap: 20px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.616);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.card-design {
+  animation-delay: var(--fadeinup-delay-card1);
+}
+
+.card-developpement {
+  animation-delay: var(--fadeinup-delay-card2);
+}
+
+.card-marketing {
+  animation-delay: var(--fadeinup-delay-card3);
+}
+
+.cards:hover > .image {
+  animation: scale 1s linear forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .image {
@@ -25,7 +71,6 @@
 }
 
 .text-div {
-  color: var(--text-color);
   margin: 10px;
 }
 
