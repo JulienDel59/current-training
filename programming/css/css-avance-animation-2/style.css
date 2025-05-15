@@ -3,6 +3,8 @@
   --fadeinup-delay-card1: 0.4s;
   --fadeinup-delay-card2: 0.8s;
   --fadeinup-delay-card3: 1.2s;
+  --coler-button: brown;
+  --coler-button-hover: black;
 }
 
 h1,
@@ -41,7 +43,7 @@ h2 {
 }
 
 .cards:hover > .image {
-  animation: scale 1s linear forwards;
+  animation: scale 0.3s linear forwards;
 }
 
 @keyframes scale {
@@ -78,8 +80,21 @@ h2 {
 .button {
   border-radius: 10px;
   border: none;
-  background-color: brown;
   color: white;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 10px;
+  display: block;
+  background: linear-gradient(
+    to right,
+    var(--coler-button-hover) 50%,
+    var(--coler-button) 50%
+  );
+  background-size: 200%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
 }
