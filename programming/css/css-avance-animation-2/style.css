@@ -1,5 +1,5 @@
 :root {
-  --text-color: rgb(121, 26, 26);
+  --text-color: rgb(209, 13, 13);
 }
 
 .section-grille {
@@ -12,9 +12,9 @@
 .cards {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.616);
-  gap: 10px;
 }
 
 .image {
@@ -22,4 +22,18 @@
   height: 300px;
   background-size: cover;
   background-position: center;
+}
+
+.text-div {
+  color: var(--text-color);
+  margin: 10px;
+}
+
+.button {
+  border-radius: 10px;
+  border: none;
+  background-color: brown;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
