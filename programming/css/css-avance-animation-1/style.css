@@ -1,15 +1,15 @@
+:root {
+  --couleur-primaire: #c01313;
+  --couleur-secondaire: #756c6cd5;
+  --duree-animation: 5s;
+}
+
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 300px;
   gap: 40px;
-}
-
-:root {
-  --couleur-primaire: #c01313;
-  --couleur-secondaire: #f3f3f3;
-  --duree-animation: 5s;
 }
 
 .loader {
@@ -27,5 +27,29 @@
   }
   to {
     transform: rotate(640deg);
+  }
+}
+
+.chargement-barre {
+  background-color: var(--couleur-secondaire);
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+}
+
+.chargement {
+  background-color: var(--couleur-primaire);
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  animation: progression 10s ease-in-out forwards;
+}
+
+@keyframes progression {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
