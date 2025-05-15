@@ -25,6 +25,7 @@ h2 {
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.616);
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
+  overflow: hidden;
 }
 
 .card-design {
@@ -65,7 +66,7 @@ h2 {
 
 .image {
   background-image: url("./image/l1.jpg");
-  height: 300px;
+  height: 290px;
   background-size: cover;
   background-position: center;
 }
