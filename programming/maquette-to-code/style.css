@@ -78,6 +78,29 @@
   margin-left: 200px;
   margin-right: 200px;
   background-color: rgb(133, 91, 14);
+  color: white;
+}
+
+.bg-img-paris {
+  background-image: url(images/paris.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+
+.bg-img-london {
+  background-image: url(images/london.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+
+.section-projects-sans-titre {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
 }
 
 .section-services {
