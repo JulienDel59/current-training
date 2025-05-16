@@ -13,6 +13,10 @@ h2 {
 }
 
 .section-grille {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 1000px;
@@ -25,7 +29,6 @@ h2 {
   gap: 20px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.616);
-  opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
   overflow: hidden;
 }
@@ -97,4 +100,19 @@ h2 {
 
 .button:hover {
   background-position: left bottom;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  margin: 0 auto;
+  background: brown;
+  transition: width 0.2s ease-in-out;
+}
+
+.cards:hover h2::after {
+  width: 100%;
 }
