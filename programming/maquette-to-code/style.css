@@ -9,12 +9,22 @@
   color: white;
   font-size: 25px;
   gap: 30px;
-  padding: 10px;
 }
 
 .lien {
   text-decoration: none;
   color: white;
+}
+
+.lien1,
+.lien2,
+.lien4,
+.lien5 {
+  padding-top: 10px;
+}
+
+.logo-lien {
+  padding: 0px;
 }
 
 .text-header {
@@ -33,4 +43,27 @@
   border-radius: 10px;
   margin-top: 30px;
   margin-left: 280px;
+}
+
+.main {
+  background-color: gray;
+}
+
+.secton-go-hall {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(37, 34, 34);
+  color: white;
+}
+
+.section-projects {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(133, 91, 14);
+}
+
+.section-services {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(37, 34, 34);
 }
