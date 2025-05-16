@@ -11,29 +11,32 @@
   <body>
     <header class="header">
       <nav>
-        <ul>
-          <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">the hall</a></li>
-          <li><a href="">projects</a></li>
-          <li><a href="">contacts</a></li>
-          <li><a href="">home</a></li>
+        <ul class="nav-bar">
+          <li><a class="lien" href="">home</a></li>
+          <li><a class="lien" href="">about</a></li>
+          <li>
+            <a class="lien" href=""
+              ><img class="bg-logo-header" src="images/logo_header.png" />
+            </a>
+          </li>
+          <li><a class="lien" href="">projects</a></li>
+          <li><a class="lien" href="">contacts</a></li>
         </ul>
-        <div>
-          <h1>concert hall in new york</h1>
-          <p>
-            Concert Hall is the architecture of a new generation a building that
-            exists not only in the dimension of space, but also in the dimension
-            of time and communication.
-          </p>
-          <button type="button">LOOK MORE</button>
-        </div>
-        <div>
-          <img src="" />
-          <img src="" />
-          <img src="" />
-        </div>
       </nav>
+      <div class="text-header">
+        <h1>concert hall in new york</h1>
+        <p>
+          Concert Hall is the architecture of a new generation a building that
+          exists not only in the dimension of space, but also in the dimension
+          of time and communication.
+        </p>
+        <button class="btn-look-more" type="button">LOOK MORE</button>
+      </div>
+      <div>
+        <img src="" />
+        <img src="" />
+        <img src="" />
+      </div>
     </header>
 
     <main>
@@ -120,7 +123,21 @@
           </p>
         </div>
       </section>
-      <footer></footer>
+      <footer>
+        <section>
+          <div>
+            <img src="" />
+          </div>
+          <div>
+            <label for="name">Name*: </label>
+            <input type="text" name="name" id="name" required />
+            <label for="name">E-mail*: </label>
+            <input type="text" name="name" id="name" required />
+            <label for="name">Message*: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
