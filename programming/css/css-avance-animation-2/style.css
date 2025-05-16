@@ -17,6 +17,15 @@ h2 {
   color: var(--text-color-titre);
 }
 
+h2 {
+  box-sizing: border-box;
+  position: relative;
+}
+
+h2 {
+  width: fit-content;
+}
+
 .section-grille {
   position: absolute;
   top: 40%;
@@ -54,26 +63,6 @@ h2 {
   animation: scale 0.3s linear forwards;
 }
 
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .image {
   background-image: url("./image/l1.jpg");
   height: 290px;
@@ -107,15 +96,6 @@ h2 {
   background-position: left bottom;
 }
 
-h2 {
-  box-sizing: border-box;
-  position: relative;
-}
-
-h2 {
-  width: fit-content;
-}
-
 h2::after {
   content: "";
   display: block;
@@ -129,4 +109,24 @@ h2::after {
 
 .cards:hover h2::after {
   width: 100%;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
