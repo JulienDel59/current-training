@@ -107,6 +107,10 @@ h2 {
   position: relative;
 }
 
+h2 {
+  width: fit-content;
+}
+
 h2::after {
   content: "";
   display: block;
