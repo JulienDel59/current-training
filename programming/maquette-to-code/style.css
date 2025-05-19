@@ -1,6 +1,8 @@
 :root {
   --color-primary: burlywood;
   --color-secondary: #dadada;
+  --color-trimary: black;
+  --color-white: white;
 }
 
 html {
@@ -143,35 +145,53 @@ html {
 }
 
 .section-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   background-color: var(--color-primary);
-  color: var(--color-secondary);
-  padding: 50px;
+  color: var(--color-white);
+  padding: 64px;
+}
+
+.black-color {
+  color:var(--color-trimary)
 }
 
 .bg-img-paris {
   background-image: url(images/paris.jpg);
   background-size: cover;
   background-position: center;
+  width: 380px;
 }
 
 .bg-img-london {
   background-image: url(images/london.jpg);
   background-size: cover;
   background-position: center;
+  width: 380px;
 }
 
 .section-projects-sans-titre {
   display: flex;
-  padding: 50px;
-  gap: 20px;
+  gap:16px;
 }
 
 .text-in-img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
+  text-align: start;
+  text-transform: uppercase;
   padding: 10px;
+
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.color-primary {
+  color:var(--color-primary)
 }
 
 .logo12-text {
@@ -181,8 +201,8 @@ html {
 }
 
 .logo12 {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 .section-services {
