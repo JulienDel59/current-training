@@ -57,7 +57,7 @@ html {
   margin: 0 auto;
   max-width: 1000px;
   gap: 20px;
-  padding: 32px;
+  padding: 64px;
   height: 530px;
 }
 
@@ -74,40 +74,31 @@ html {
   background-color: gray;
 }
 
-.tilte-h2 {
-  font-size: 32px;
-  text-align: center;
-}
-
 .section {
   max-width: 1000px;
   margin: 0 auto;
 }
 
+.tilte-h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
 .section-go-hall {
   background-color: rgb(37, 34, 34);
   color: var(--color-secondary);
-  padding: 50px;
-}
-
-span {
-  color: var(--color-primary);
+  padding: 64px;
 }
 
 .section-go-hall-sans-titre {
   display: flex;
-  gap: 10px;
-  padding: 50px;
-}
-
-.text-blc {
-  color: white;
+  gap: 15px;
 }
 
 .text-go-hall {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .style-paragraphe {
@@ -116,26 +107,28 @@ span {
   border-top: 0px;
   border-right: 0px;
   border-bottom: 0px;
-  padding-left: 50px;
+  padding-left: 32px;
 }
 
-.img-go-hall {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin-top: 60px;
+.imghall {
+  width: 740px;
+}
+
+.img-and-text-hall {
+  margin-top: 70px;
 }
 
 .text-img-go-hall {
-  background-color: var(--color-primary);
   text-align: center;
   position: absolute;
-  margin-top: 250px;
-  margin-left: 30px;
-  font-size: 12px;
-  padding: 6px;
-  width: 100px;
+  background-color: var(--color-primary);
   color: var(--color-secondary);
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+.span {
+  color: var(--color-primary);
 }
 
 .section-projects {
