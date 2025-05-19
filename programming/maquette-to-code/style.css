@@ -1,5 +1,6 @@
 html {
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .header {
@@ -14,9 +15,12 @@ html {
   align-items: center;
   list-style: none;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   gap: 50px;
+}
+
+.logo-header:hover {
 }
 
 .lien {
@@ -24,33 +28,30 @@ html {
   color: white;
 }
 
-.lien1,
-.lien2,
-.lien4,
-.lien5 {
-  padding-top: 10px;
-}
-
-.logo-lien {
-  padding: 0px;
+.tilte-header {
+  text-transform: uppercase;
+  font-size: 42px;
 }
 
 .text-header {
   display: flex;
   margin: 100px;
-  margin-left: 800px;
+  margin-left: 830px;
   flex-direction: column;
-  width: 400px;
+  width: 460px;
   color: aliceblue;
   gap: 10px;
+  text-align: end;
 }
 
 .btn-look-more {
-  width: 120px;
   border: none;
-  border-radius: 10px;
+  border-radius: 60px;
   margin-top: 30px;
-  margin-left: 280px;
+  margin-left: 330px;
+  background-color: burlywood;
+  color: white;
+  font-size: 13px;
 }
 
 .main {
