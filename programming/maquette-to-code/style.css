@@ -154,23 +154,27 @@ html {
 }
 
 .black-color {
-  color:var(--color-trimary)
+   color:var(--color-trimary) 
+}
+
+.white-color {
+  color: var(--color-white);
 }
 
 .bg-img-paris {
   background-image: url(images/paris.jpg);
   background-size: cover;
   background-position: center;
-  width: 400px;
-  height: 300px;
+  width: 340px;
+  height: 360px;
 }
 
 .bg-img-london {
   background-image: url(images/london.jpg);
   background-size: cover;
   background-position: center;
-  width: 400px;
-  height: 300px;
+  width: 340px;
+  height: 360px;
 }
 
 .section-projects-sans-titre {
@@ -206,19 +210,20 @@ html {
 
 .logo12-text {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column; 
+  width: 600px;
+  gap: 30px;
+  color: var(--color-trimary);
 }
 
 .logo12 {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 140px;
 }
 
 .section-services {
   display: flex;
   flex-direction: column;
-
   background-color: rgb(37, 34, 34);
   padding: 50px;
 }
