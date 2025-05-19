@@ -85,14 +85,20 @@ html {
 }
 
 .section-go-hall {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(37, 34, 34);
   color: var(--color-secondary);
   padding: 64px;
+  gap: 80px;
+}
+
+.color-go-hall {
+  color: var(--color-primary);
 }
 
 .section-go-hall-sans-titre {
   display: flex;
-  margin: 0 auto;
   gap: 15px;
 }
 
@@ -104,11 +110,11 @@ html {
 
 .style-paragraphe {
   color: var(--color-primary);
-  border: 3px solid burlywood;
+  border: 3px solid var(--color-primary);
   border-top: 0px;
   border-right: 0px;
   border-bottom: 0px;
-  padding-left: 32px;
+  padding-left: 64px;
 }
 
 .imghall {
@@ -119,17 +125,15 @@ html {
   margin-top: 70px;
 }
 
-.text-img-go-hall {
-  text-align: center;
+.text-sous-img-go-hall {
   position: absolute;
+  margin-top: -10px;
+  margin-left: 30px;
+  text-align: center;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-size: 13px;
   padding: 5px 10px;
-}
-
-.span {
-  color: var(--color-primary);
 }
 
 .section-projects {
