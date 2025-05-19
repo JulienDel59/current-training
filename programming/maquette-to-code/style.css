@@ -161,14 +161,16 @@ html {
   background-image: url(images/paris.jpg);
   background-size: cover;
   background-position: center;
-  width: 380px;
+  width: 400px;
+  height: 300px;
 }
 
 .bg-img-london {
   background-image: url(images/london.jpg);
   background-size: cover;
   background-position: center;
-  width: 380px;
+  width: 400px;
+  height: 300px;
 }
 
 .section-projects-sans-titre {
@@ -182,9 +184,17 @@ html {
   justify-content: space-between;
   text-align: start;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 20px;
 
 }
+
+ .date-concert {
+  font-size: 14px;
+  background-color: var(--color-trimary);
+  width: 110px;
+  text-align: center;
+  padding: 3px;
+} 
 
 .uppercase {
   text-transform: uppercase;
