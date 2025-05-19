@@ -52,9 +52,13 @@ html {
   flex-direction: column;
   align-items: end;
   text-align: end;
-  max-width: 1200px;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
   gap: 20px;
-  padding: 82px;
+  padding: 32px;
+  height: 530px;
 }
 
 .btn-look-more {
@@ -75,9 +79,12 @@ html {
   text-align: center;
 }
 
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .section-go-hall {
-  margin-left: 200px;
-  margin-right: 200px;
   background-color: rgb(37, 34, 34);
   color: var(--color-secondary);
   padding: 50px;
@@ -132,8 +139,6 @@ span {
 }
 
 .section-projects {
-  margin-left: 200px;
-  margin-right: 200px;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   padding: 50px;
@@ -179,8 +184,7 @@ span {
 .section-services {
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
-  margin-right: 200px;
+
   background-color: rgb(37, 34, 34);
   padding: 50px;
 }
