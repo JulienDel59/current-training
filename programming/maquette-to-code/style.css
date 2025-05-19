@@ -20,7 +20,17 @@ html {
   gap: 50px;
 }
 
-.logo-header:hover {
+.lien-logo {
+  background-image: url(images/logo_header.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 300px;
+}
+
+.lien-logo:hover {
+  background-image: url(images/logo_hover.png);
 }
 
 .lien {
