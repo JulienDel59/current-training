@@ -46,7 +46,7 @@ html {
 .text-header {
   display: flex;
   margin: 100px;
-  margin-left: 830px;
+  margin-left: 800px;
   flex-direction: column;
   width: 460px;
   color: aliceblue;
@@ -58,7 +58,7 @@ html {
   border: none;
   border-radius: 60px;
   margin-top: 30px;
-  margin-left: 330px;
+  margin-left: 350px;
   background-color: burlywood;
   color: white;
   font-size: 13px;
@@ -90,6 +90,23 @@ html {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.img-go-hall {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.text-img-go-hall {
+  background-color: burlywood;
+  text-align: center;
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 30px;
+  font-size: 12px;
+  padding: 6px;
+  width: 100px;
 }
 
 .section-projects {
