@@ -1,6 +1,11 @@
+:root {
+  --color-primary: burlywood;
+  --color-secondary: #e4e4e4;
+}
+
 html {
   font-family: "Roboto", sans-serif;
-  color: #e4e4e4;
+  color: var(--color-secondary);
 }
 
 .header {
@@ -34,7 +39,7 @@ html {
 
 .lien {
   text-decoration: none;
-  color: #e4e4e4;
+  color: var(--color-secondary);
 }
 
 .tilte-header {
@@ -44,22 +49,21 @@ html {
 
 .text-header {
   display: flex;
-  margin: 100px;
-  margin-left: 800px;
   flex-direction: column;
-  width: 460px;
-  gap: 10px;
+  align-items: end;
   text-align: end;
+  max-width: 1200px;
+  gap: 20px;
+  padding: 82px;
 }
 
 .btn-look-more {
   border: none;
   border-radius: 60px;
-  margin-top: 30px;
-  margin-left: 350px;
-  background-color: burlywood;
-  color: #e4e4e4;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 13px;
+  padding: 5px 10px;
 }
 
 .main {
@@ -75,12 +79,12 @@ html {
   margin-left: 200px;
   margin-right: 200px;
   background-color: rgb(37, 34, 34);
-  color: #e4e4e4;
+  color: var(--color-secondary);
   padding: 50px;
 }
 
 span {
-  color: burlywood;
+  color: var(--color-primary);
 }
 
 .section-go-hall-sans-titre {
@@ -100,7 +104,7 @@ span {
 }
 
 .style-paragraphe {
-  color: burlywood;
+  color: var(--color-primary);
   border: 3px solid burlywood;
   border-top: 0px;
   border-right: 0px;
@@ -111,25 +115,27 @@ span {
 .img-go-hall {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 500px;
+  margin-top: 60px;
 }
 
 .text-img-go-hall {
-  background-color: burlywood;
+  background-color: var(--color-primary);
   text-align: center;
   position: absolute;
-  margin-top: 240px;
+  margin-top: 250px;
   margin-left: 30px;
   font-size: 12px;
   padding: 6px;
   width: 100px;
+  color: var(--color-secondary);
 }
 
 .section-projects {
   margin-left: 200px;
   margin-right: 200px;
-  background-color: rgb(133, 91, 14);
-  color: #e4e4e4;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   padding: 50px;
 }
 
