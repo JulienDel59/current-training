@@ -1,6 +1,6 @@
 :root {
   --color-primary: burlywood;
-  --color-secondary: #e4e4e4;
+  --color-secondary: #dadada;
 }
 
 html {
@@ -93,8 +93,12 @@ html {
   gap: 80px;
 }
 
-.color-go-hall {
+.color-tilte-go-hall {
   color: var(--color-primary);
+}
+
+.sous-titre {
+  color: white;
 }
 
 .section-go-hall-sans-titre {
@@ -123,17 +127,19 @@ html {
 
 .img-and-text-hall {
   margin-top: 70px;
+  position: relative;
 }
 
 .text-sous-img-go-hall {
   position: absolute;
-  margin-top: -10px;
-  margin-left: 30px;
   text-align: center;
+  bottom: -10px;
+  left: 10px;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-size: 13px;
   padding: 5px 10px;
+  color: var(--color-secondary);
 }
 
 .section-projects {
