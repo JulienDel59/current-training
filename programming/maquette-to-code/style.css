@@ -1,6 +1,6 @@
 html {
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #e4e4e4;
 }
 
 .header {
@@ -14,7 +14,6 @@ html {
   justify-content: center;
   align-items: center;
   list-style: none;
-  color: white;
   font-size: 18px;
   text-transform: uppercase;
   gap: 50px;
@@ -35,7 +34,7 @@ html {
 
 .lien {
   text-decoration: none;
-  color: white;
+  color: #e4e4e4;
 }
 
 .tilte-header {
@@ -49,7 +48,6 @@ html {
   margin-left: 800px;
   flex-direction: column;
   width: 460px;
-  color: aliceblue;
   gap: 10px;
   text-align: end;
 }
@@ -60,7 +58,7 @@ html {
   margin-top: 30px;
   margin-left: 350px;
   background-color: burlywood;
-  color: white;
+  color: #e4e4e4;
   font-size: 13px;
 }
 
@@ -69,6 +67,7 @@ html {
 }
 
 .tilte-h2 {
+  font-size: 32px;
   text-align: center;
 }
 
@@ -76,8 +75,12 @@ html {
   margin-left: 200px;
   margin-right: 200px;
   background-color: rgb(37, 34, 34);
-  color: white;
+  color: #e4e4e4;
   padding: 50px;
+}
+
+span {
+  color: burlywood;
 }
 
 .section-go-hall-sans-titre {
@@ -86,10 +89,23 @@ html {
   padding: 50px;
 }
 
+.text-blc {
+  color: white;
+}
+
 .text-go-hall {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.style-paragraphe {
+  color: burlywood;
+  border: 3px solid burlywood;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  padding-left: 50px;
 }
 
 .img-go-hall {
@@ -113,7 +129,7 @@ html {
   margin-left: 200px;
   margin-right: 200px;
   background-color: rgb(133, 91, 14);
-  color: white;
+  color: #e4e4e4;
   padding: 50px;
 }
 
