@@ -283,7 +283,10 @@ html {
 
 .footer {
   display: flex;
-  height: 200px;
+  justify-content: center;
+  padding: 64px;
+  height: 400px;
+  width: 800px;
 }
 
 .bg-footer {
