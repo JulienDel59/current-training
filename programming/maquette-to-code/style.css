@@ -25,7 +25,7 @@ html {
   list-style: none;
   font-size: 18px;
   text-transform: uppercase;
-  gap: 50px;
+  gap: 40px;
 }
 
 .lien-logo {
@@ -45,20 +45,23 @@ html {
   text-decoration: none;
   color: var(--color-secondary);
   position: relative;
+  padding-bottom: 20px;
 }
 
-.lien::after {
+.lien::before {
   content: "";
   display: block;
   position: absolute;
   height: 2px;
   width: 0px;
+  left: 0;
+  bottom: 0;
   margin-top: 10px;
   background: var(--color-primary);
   transition: width 0.3s ease-in-out;
 }
 
-.lien:hover .lien::after {
+.lien:hover .lien::before {
   width: 100%;
 }
 
@@ -329,8 +332,14 @@ html {
   padding: 20px;
   width: 360px;
   height: 300px;
+  gap: 10px;
 }
+
 .style-form {
+  background-color: var(--color-black-transparent);
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
 }
 
 .btn-envoyer {
