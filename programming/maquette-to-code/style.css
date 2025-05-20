@@ -286,7 +286,23 @@ html {
   justify-content: center;
   padding: 64px;
   height: 400px;
-  width: 800px;
+}
+
+.request {
+  width: 300px;
+  color: var(--color-white);
+  padding: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}
+
+.btn-envoyer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .bg-footer {
@@ -298,5 +314,5 @@ html {
 }
 
 .bg-form {
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: rgba(0, 0, 0, 0.829);
 }
