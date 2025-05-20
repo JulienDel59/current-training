@@ -12,13 +12,13 @@
     <header class="header">
       <nav>
         <ul class="nav-bar">
-          <li><a class="lien" href="">home</a></li>
-          <li><a class="lien" href="">about</a></li>
+          <li class="lien"><a class="lien" href="">home</a></li>
+          <li class="lien"><a class="lien" href="">about</a></li>
           <li class="lien-logo">
             <a class="lien" href=""></a>
           </li>
-          <li><a class="lien" href="">projects</a></li>
-          <li><a class="lien" href="">contacts</a></li>
+          <li class="lien"><a class="lien" href="">projects</a></li>
+          <li class="lien"><a class="lien" href="">contacts</a></li>
         </ul>
       </nav>
       <div class="text-header">
@@ -123,18 +123,18 @@
               <h3>DEVELOPPEMENT</h3>
               <p>
                 lorem ipsum dolor sit amet <br />consecteteur adipiscing elit.
-                Aeneam<br />
-                commodo ligula eget dolor. aeneam <br />
-                massa. Cum socils natoque penatibus et magnis dis parturient
-                montes, nascetur ridivulus mus. Donec quam felis, ulticies nec,
-                pretium quis, sem. Nulla consesquat masse quis enim.
+                Aeneam commodo ligula eget dolor. aeneam massa. Cum socils
+                natoque penatibus et <br />
+                magnis dis parturient montes, nascetur ridivulus mus. Donec quam
+                felis, ulticies nec, pretium quis, sem. Nulla consesquat <br />
+                masse quis enim.
               </p>
             </div>
             <button class="btn-more" type="button">MORE</button>
           </div>
           <div class="flex-btn-more">
             <div class="flex-dev-works">
-              <img class="logo-services" src="images/3d-logo.png" />
+              <img class="logo-works" src="images/3d-logo.png" />
               <h3>PLANS WORKS</h3>
               <p>
                 Cum socil natoque penatibus et magnis dis parturient montess,
@@ -163,11 +163,29 @@
         </div>
         <div class="bg-form form">
           <label for="name">Name*: </label>
-          <input type="text" name="name" id="name" required />
-          <label for="name">E-mail*: </label>
-          <input type="text" name="name" id="name" required />
-          <label for="name">Message*: </label>
-          <input type="text" name="name" id="name" required />
+          <input
+            class="style-form"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+          <label for="email">E-mail*: </label>
+          <input
+            class="style-form"
+            type="text"
+            name="email"
+            id="email"
+            required
+          />
+          <label for="message">Message*: </label>
+          <input
+            class="style-form"
+            type="text"
+            name="message"
+            id="message"
+            required
+          />
           <button class="btn-envoyer" type="button">ENVOYER</button>
         </div>
       </section>

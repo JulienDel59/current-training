@@ -3,14 +3,12 @@
   --color-secondary: #dadada;
   --color-trimary: black;
   --color-white: white;
+  --color-black-transparent: rgba(0, 0, 0, 0.829);
 }
 
 html {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
   color: var(--color-secondary);
 }
 
@@ -46,6 +44,22 @@ html {
 .lien {
   text-decoration: none;
   color: var(--color-secondary);
+  position: relative;
+}
+
+.lien::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  margin: 0;
+  background: var(--color-primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.lien:hover .lien::after {
+  width: 100%;
 }
 
 .tilte-header {
@@ -234,11 +248,15 @@ html {
 
 .section-services-sans-titre {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .logo-services {
   width: 80px;
+}
+
+.logo-works {
+  width: 70px;
 }
 
 .btn-more {
@@ -256,6 +274,7 @@ html {
 .btn-more:hover {
   background-color: var(--color-primary);
   color: var(--color-trimary);
+  animation: scale 0.3s linear forwards;
 }
 
 .img-map {
@@ -294,15 +313,20 @@ html {
 }
 
 .request {
-  width: 300px;
+  width: 360px;
+  height: 300px;
   color: var(--color-white);
   padding: 20px;
 }
+
 .form {
   display: flex;
   flex-direction: column;
-  width: 300px;
   padding: 20px;
+  width: 360px;
+  height: 300px;
+}
+.style-form {
 }
 
 .btn-envoyer {
@@ -310,6 +334,7 @@ html {
   color: var(--color-white);
   border: none;
   border-radius: 4px;
+  width: 100px;
 }
 
 .bg-footer {
@@ -321,5 +346,14 @@ html {
 }
 
 .bg-form {
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: var(--color-black-transparent);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
 }
