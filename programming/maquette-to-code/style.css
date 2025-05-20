@@ -262,6 +262,12 @@ html {
   gap: 20px;
 }
 
+.flex-btn-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .flex-map {
   display: flex;
   flex-direction: column;
