@@ -11,15 +11,15 @@
   <body>
     <header class="header">
       <nav>
-        <ul class="nav-bar">
-          <li class="lien"><a class="lien" href="">home</a></li>
+        <ul class="section nav-bar">
+          <li class="lien-content"><a class="lien" href="">home</a></li>
 
-          <li class="lien"><a class="lien" href="">about</a></li>
+          <li class="lien-content"><a class="lien" href="">about</a></li>
           <li class="lien-logo">
             <a href=""></a>
           </li>
-          <li class="lien"><a class="lien" href="">projects</a></li>
-          <li class="lien"><a class="lien" href="">contacts</a></li>
+          <li class="lien-content"><a class="lien" href="">projects</a></li>
+          <li class="lien-content"><a class="lien" href="">contacts</a></li>
         </ul>
       </nav>
       <div class="text-header">
@@ -162,8 +162,7 @@
         <div class="bg-request request">
           <p>REQUEST <br />A CALL BACK</p>
         </div>
-        <div class="bg-form form">
-          <label for="name"></label>
+        <form action="" method="" class="bg-form form">
           <input
             class="style-form"
             type="text"
@@ -172,7 +171,6 @@
             placeholder="Name*"
             required
           />
-          <label for="email"></label>
           <input
             class="style-form"
             type="text"
@@ -181,17 +179,15 @@
             placeholder="E-mail*"
             required
           />
-          <label for="message"></label>
-          <input
-            class="style-form"
-            type="text"
+
+          <textarea
+            class="textarea-form style-form"
             name="message"
-            id="message"
             placeholder="Message*"
             required
-          />
-          <button class="btn-envoyer" type="button">ENVOYER</button>
-        </div>
+          ></textarea>
+          <button class="btn-envoyer" type="submit">ENVOYER</button>
+        </form>
       </section>
     </footer>
   </body>
