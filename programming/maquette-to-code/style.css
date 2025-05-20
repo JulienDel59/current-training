@@ -135,7 +135,7 @@ html {
 
 .section-go-hall-sans-titre {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .text-go-hall {
@@ -177,7 +177,7 @@ html {
 .section-projects {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px; 
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: 64px;
@@ -209,7 +209,7 @@ html {
 
 .section-projects-sans-titre {
   display: flex;
-  gap: 16px;
+  gap: 20px;
 }
 
 .text-in-img {
@@ -255,7 +255,7 @@ html {
   flex-direction: column;
   background-color: rgb(37, 34, 34);
   padding: 64px;
-  gap: 50px;
+  gap: 40px; 
 }
 
 .section-services-sans-titre {
@@ -329,6 +329,7 @@ html {
   height: 300px;
   color: var(--color-white);
   padding: 20px;
+  font-size: larger;
 }
 
 .form {
