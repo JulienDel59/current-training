@@ -229,7 +229,7 @@ html {
   flex-direction: column;
   background-color: rgb(37, 34, 34);
   padding: 64px;
-  gap: 40px;
+  gap: 50px;
 }
 
 .section-services-sans-titre {
@@ -254,6 +254,19 @@ html {
   border-left: 0px;
   border-right: 0px;
   padding: 32px;
+}
+
+.flex-dev-works {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-map {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: end;
 }
 
 .footer {
