@@ -246,6 +246,12 @@ html {
   color: var(--color-primary);
   width: 140px;
   text-align: end;
+  padding-right: 10px;
+}
+
+.btn-more:hover {
+  background-color: var(--color-primary);
+  color: var(--color-trimary);
 }
 
 .img-map {
