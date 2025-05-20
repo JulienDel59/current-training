@@ -7,6 +7,10 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   color: var(--color-secondary);
 }
 
@@ -154,7 +158,7 @@ html {
 }
 
 .black-color {
-   color:var(--color-trimary) 
+  color: var(--color-trimary);
 }
 
 .white-color {
@@ -179,7 +183,7 @@ html {
 
 .section-projects-sans-titre {
   display: flex;
-  gap:16px;
+  gap: 16px;
 }
 
 .text-in-img {
@@ -189,28 +193,27 @@ html {
   text-align: start;
   text-transform: uppercase;
   padding: 20px;
-
 }
 
- .date-concert {
+.date-concert {
   font-size: 14px;
   background-color: var(--color-trimary);
   width: 110px;
   text-align: center;
   padding: 3px;
-} 
+}
 
 .uppercase {
   text-transform: uppercase;
 }
 
 .color-primary {
-  color:var(--color-primary)
+  color: var(--color-primary);
 }
 
 .logo12-text {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 600px;
   gap: 30px;
   color: var(--color-trimary);
@@ -225,13 +228,32 @@ html {
   display: flex;
   flex-direction: column;
   background-color: rgb(37, 34, 34);
-  padding: 50px;
+  padding: 64px;
+  gap: 40px;
 }
 
 .section-services-sans-titre {
   display: flex;
-  gap: 10px;
-  padding: 50px;
+  gap: 20px;
+}
+
+.btn-more {
+  background-color: gray;
+  border: 2px solid var(--color-primary);
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  color: var(--color-primary);
+  width: 140px;
+  text-align: end;
+}
+
+.img-map {
+  display: flex;
+  border: 3px solid var(--color-primary);
+  border-left: 0px;
+  border-right: 0px;
+  padding: 32px;
 }
 
 .footer {
