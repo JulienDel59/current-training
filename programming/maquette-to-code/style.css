@@ -4,6 +4,11 @@
   --color-trimary: black;
   --color-white: white;
   --color-black-transparent: rgba(0, 0, 0, 0.829);
+  --litle-gap:20px;
+  --medium-gap:40px;
+  --litle-padding:20px;
+  --medium-padding:32px;
+  --large-padding:64px;
 }
 
 html {
@@ -25,7 +30,7 @@ html {
   list-style: none;
   font-size: 18px;
   text-transform: uppercase;
-  gap: 40px;
+  gap: var(--medium-gap);
   padding: 0;
 }
 
@@ -84,8 +89,8 @@ html {
   justify-content: center;
   margin: 0 auto;
   max-width: 1000px;
-  gap: 20px;
-  padding: 64px;
+  gap: var(--litle-gap);
+  padding: var(--large-padding);
   height: 530px;
 }
 
@@ -121,8 +126,8 @@ html {
   flex-direction: column;
   background-color: rgb(37, 34, 34);
   color: var(--color-secondary);
-  padding: 64px;
-  gap: 80px;
+  padding: var(--large-padding);
+  gap: var(--medium-gap);
 }
 
 .color-tilte-go-hall {
@@ -135,13 +140,13 @@ html {
 
 .section-go-hall-sans-titre {
   display: flex;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .text-go-hall {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .style-paragraphe {
@@ -177,10 +182,10 @@ html {
 .section-projects {
   display: flex;
   flex-direction: column;
-  gap: 40px; 
+  gap: var(--medium-gap); 
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 64px;
+  padding: var(--large-padding);
 }
 
 .black-color {
@@ -209,7 +214,7 @@ html {
 
 .section-projects-sans-titre {
   display: flex;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .text-in-img {
@@ -254,13 +259,13 @@ html {
   display: flex;
   flex-direction: column;
   background-color: rgb(37, 34, 34);
-  padding: 64px;
-  gap: 40px; 
+  padding: var(--large-padding);
+  gap: var(--medium-gap); 
 }
 
 .section-services-sans-titre {
   display: flex;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .logo-services {
@@ -294,33 +299,33 @@ html {
   border: 3px solid var(--color-primary);
   border-left: 0px;
   border-right: 0px;
-  padding: 32px;
+  padding: var(--medium-padding);
 }
 
 .flex-dev-works {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .flex-btn-more {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .flex-map {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--litle-gap);
   text-align: end;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  padding: 64px;
+  padding: var(--medium-padding);
   height: 400px;
 }
 
@@ -328,17 +333,17 @@ html {
   width: 360px;
   height: 300px;
   color: var(--color-white);
-  padding: 20px;
+  padding: var(--litle-padding);
   font-size: larger;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: var(--litle-padding);
   width: 360px;
   height: 300px;
-  gap: 20px;
+  gap: var(--litle-gap);
 }
 
 .style-form {
