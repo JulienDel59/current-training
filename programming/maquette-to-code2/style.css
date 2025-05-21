@@ -1,0 +1,32 @@
+.titre-img {
+  display: flex;
+  justify-content: center;
+  background-image: url(images/bg_header.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-adéquation {
+  width: 250px;
+  padding: 30px;
+}
+
+.content-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  list-style: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
