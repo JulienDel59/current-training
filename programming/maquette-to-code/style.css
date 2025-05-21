@@ -36,6 +36,8 @@ html {
   text-transform: uppercase;
   gap: var(--medium-gap);
   padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .lien-logo {
@@ -146,7 +148,8 @@ html {
 
 .section-go-hall-sans-titre {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--litle-gap);
 }
 
@@ -154,6 +157,8 @@ html {
   display: flex;
   flex-direction: column;
   gap: var(--litle-gap);
+  flex: 1;
+  min-width: 300px;
 }
 
 .style-paragraphe {
@@ -164,8 +169,9 @@ html {
   border-bottom: 0px;
   padding-left: 64px;
 }
+
 .imghall {
-  width: 700px;
+  max-width: 700px;
 }
 
 .img-and-text-hall {
