@@ -17,7 +17,7 @@
   background-color: burlywood;
 }
 
-.ul {
+.nav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,5 +35,7 @@
 .search-container {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
   padding-bottom: 20px;
 }
+
