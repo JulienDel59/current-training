@@ -4,10 +4,9 @@
   --color-trimary: black;
   --color-white: white;
   --color-black-transparent: rgba(0, 0, 0, 0.829);
-  --litle-gap: 20px;
-  --medium-gap: 40px;
-  --litle-padding: 20px;
-  --medium-padding: 32px;
+  --litle-gap: 16px;
+  --medium-gap: 32px;
+  --litle-padding: 16px;
   --large-padding: 64px;
 }
 
@@ -92,7 +91,6 @@ html {
   text-align: end;
   align-content: center;
   justify-content: center;
-  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1000px;
   gap: var(--litle-gap);
@@ -120,6 +118,7 @@ html {
 .section {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 64px;
 }
 
 .tilte-h2 {
@@ -130,7 +129,6 @@ html {
 .section-go-hall {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: rgb(37, 34, 34);
   color: var(--color-secondary);
   padding: var(--large-padding);
@@ -148,6 +146,7 @@ html {
 
 .section-go-hall-sans-titre {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: var(--litle-gap);
 }
 
@@ -165,11 +164,6 @@ html {
   border-bottom: 0px;
   padding-left: 64px;
 }
-
-.imghall {
-  width: 740px;
-}
-
 .img-and-text-hall {
   margin-top: 70px;
   position: relative;
@@ -190,7 +184,6 @@ html {
 .section-projects {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: var(--medium-gap);
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -205,24 +198,26 @@ html {
   color: var(--color-white);
 }
 
+.container-flex {
+  width: 240px;
+  min-height: 300px;
+}
+
 .bg-img-paris {
   background-image: url(images/paris.jpg);
   background-size: cover;
   background-position: center;
-  width: 340px;
-  height: 360px;
 }
 
 .bg-img-london {
   background-image: url(images/london.jpg);
   background-size: cover;
   background-position: center;
-  width: 340px;
-  height: 360px;
 }
 
 .section-projects-sans-titre {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: var(--litle-gap);
 }
@@ -231,7 +226,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
   text-align: start;
   text-transform: uppercase;
   padding: 20px;
@@ -256,7 +250,7 @@ html {
 .logo12-text {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  max-width: 350px;
   gap: 30px;
   color: var(--color-trimary);
 }
@@ -269,7 +263,6 @@ html {
 .section-services {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: rgb(37, 34, 34);
   padding: var(--large-padding);
   gap: var(--medium-gap);
@@ -278,6 +271,7 @@ html {
 .section-services-sans-titre {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--litle-gap);
 }
 
@@ -309,7 +303,6 @@ html {
 
 .img-map {
   display: flex;
-  flex-wrap: wrap;
   border: 3px solid var(--color-primary);
   border-left: 0px;
   border-right: 0px;
@@ -318,7 +311,6 @@ html {
 
 .flex-dev-works {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   gap: var(--litle-gap);
 }
@@ -327,14 +319,15 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+
   gap: var(--litle-gap);
 }
 
 .flex-map {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex: 0 1 0;
+  min-width: 300px;
   gap: var(--litle-gap);
   text-align: end;
 }
@@ -342,14 +335,12 @@ html {
 .footer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: var(--medium-padding);
-  height: 400px;
+  padding: var(--large-padding);
 }
 
 .request {
-  width: 360px;
-  height: 300px;
+  width: 300px;
+  max-height: 300px;
   color: var(--color-white);
   padding: var(--litle-padding);
   font-size: larger;
@@ -358,10 +349,9 @@ html {
 .form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: var(--litle-padding);
-  width: 360px;
-  height: 300px;
+  width: 300px;
+  max-height: 300px;
   gap: var(--litle-gap);
 }
 
