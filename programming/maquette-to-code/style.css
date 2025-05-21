@@ -26,7 +26,7 @@ html {
   background-position: center;
 }
 
-.nav-bar {
+.nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +80,43 @@ html {
 .lien:hover::before {
   width: 100%;
 }
+
+.menu-humburger {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.menu-humburger > .trait {
+  display: block;
+   background-color: rgb(27, 107, 27);
+  height: 3px;
+  width: 44px;
+}
+
+#menu-mobil:checked ~ .nav-bar {
+  display: block;
+}
+
+#menu-mobil {
+  display: none;
+}
+
+#menu-mobil:checked + .menu-humburger > .trait1 {
+  transform: rotate(45deg);
+  transform-origin: 10%;
+}
+
+#menu-mobil:checked + .menu-humburger > .trait2 {
+  opacity: 0;
+}
+
+#menu-mobil:checked + .menu-humburger > .trait3 {
+  transform: rotate(-45deg);
+  transform-origin: 10%;
+}
+
 
 .tilte-header {
   text-transform: uppercase;
@@ -404,5 +441,25 @@ html {
   }
   100% {
     transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+  .nav-list{
+    flex-direction: column;
+    gap:var(--litle-gap) ;
+  }
+  .lien-logo {
+    background-image: none;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-humburger {
+    display: none;
   }
 }
