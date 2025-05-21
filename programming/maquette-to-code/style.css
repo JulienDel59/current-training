@@ -4,17 +4,21 @@
   --color-trimary: black;
   --color-white: white;
   --color-black-transparent: rgba(0, 0, 0, 0.829);
-  --litle-gap:20px;
-  --medium-gap:40px;
-  --litle-padding:20px;
-  --medium-padding:32px;
-  --large-padding:64px;
+  --litle-gap: 20px;
+  --medium-gap: 40px;
+  --litle-padding: 20px;
+  --medium-padding: 32px;
+  --large-padding: 64px;
 }
 
 html {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   color: var(--color-secondary);
+}
+
+.style-bold {
+  font-weight: bold;
 }
 
 .header {
@@ -136,6 +140,7 @@ html {
 
 .sous-titre {
   color: white;
+  font-weight: bold;
 }
 
 .section-go-hall-sans-titre {
@@ -182,7 +187,7 @@ html {
 .section-projects {
   display: flex;
   flex-direction: column;
-  gap: var(--medium-gap); 
+  gap: var(--medium-gap);
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: var(--large-padding);
@@ -227,7 +232,7 @@ html {
 }
 
 .date-concert {
-  font-size: 14px;
+  font-size: 12px;
   background-color: var(--color-trimary);
   width: 110px;
   text-align: center;
@@ -260,7 +265,7 @@ html {
   flex-direction: column;
   background-color: rgb(37, 34, 34);
   padding: var(--large-padding);
-  gap: var(--medium-gap); 
+  gap: var(--medium-gap);
 }
 
 .section-services-sans-titre {
