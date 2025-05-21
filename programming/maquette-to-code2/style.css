@@ -19,10 +19,17 @@
 
 .ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   gap: 20px;
   list-style: none;
+  text-transform: uppercase;
+}
+
+.color-lien {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
 }
 
 .search-container {
