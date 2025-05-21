@@ -164,6 +164,10 @@ html {
   border-bottom: 0px;
   padding-left: 64px;
 }
+.imghall {
+  width: 700px;
+}
+
 .img-and-text-hall {
   margin-top: 70px;
   position: relative;
