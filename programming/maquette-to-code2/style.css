@@ -176,10 +176,16 @@ html {
   padding: 5px 10px;
 }
 
+.categorie {
+ padding-top:var(--litle-padding) ;
+} 
+
 .card-sujet {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--litle-padding);
+  gap: var(--medium-gap);
   background-color: var(--color-primary);
   text-align: center;
 }
@@ -191,7 +197,7 @@ html {
 
 .style-mon-sujet {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .mini-logo {
@@ -204,12 +210,7 @@ html {
   list-style: none;
 }
 
-.categorie {
-  display: flex;
-  flex-direction: column;
-  gap: var(--medium-gap);
-  padding: var(--medium-padding);
-}
+
 
 .bg-biere {
   background-image: url(images/boissons/bieres.png);
