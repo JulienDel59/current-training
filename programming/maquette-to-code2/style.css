@@ -1,5 +1,7 @@
 :root {
-  --color-primary: burlywood;
+  --color-primary: rgb(253, 201, 138);
+  --color-secondary: rgb(96, 96, 96);
+  --color-trimary: rgb(194, 197, 126);
   --litle-padding: 24px;
   --medium-padding: 48px;
   --litle-gap: 16px;
@@ -37,7 +39,7 @@
 
 .color-lien {
   text-decoration: none;
-  color: rgb(53, 53, 53);
+  color: var(--color-secondary);
 }
 
 .search-container {
@@ -48,8 +50,9 @@
 }
 
 .bg-main {
-  background-color: gray;
+  background-color: var(--color-secondary);
 }
+
 .bg-soupe {
   background-image: url(images/soupe.png);
 }
@@ -74,8 +77,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 200px;
+  width: 300px;
+  height: 220px;
 }
 
 .text-ssd {
@@ -96,5 +99,43 @@
   color: var(--color-primary);
   font-size: 24px;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 42px;
+}
+.articles-recents {
+  display: flex;
+  flex-direction: column;
+  padding: var(--medium-padding);
+  gap: var(--litle-gap);
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--litle-gap);
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--litle-gap);
+  text-align: center;
+  padding: var(--litle-padding);
+}
+.bg-card {
+  background-color: var(--color-trimary);
+}
+
+.img-toque {
+  position: absolute;
+  top: 155px;
+  left: 120px;
+  height: 50px;
+}
+
+.card {
+  position: relative;
+}
+
+.card-img {
+  height: 180px;
 }
