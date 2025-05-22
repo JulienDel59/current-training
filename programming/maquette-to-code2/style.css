@@ -1,3 +1,10 @@
+:root {
+  --color-primary: burlywood;
+  --litle-padding: 24px;
+  --medium-padding: 48px;
+  --litle-gap: 20px;
+}
+
 .titre-img {
   display: flex;
   justify-content: center;
@@ -7,22 +14,23 @@
 }
 
 .img-adéquation {
-  width: 250px;
-  padding: 30px;
+  padding: var(--litle-padding);
+  padding-top: var(--medium-padding);
+  padding-bottom: var(--medium-padding);
 }
 
 .content-nav {
   display: flex;
   flex-direction: column;
-  background-color: burlywood;
+  background-color: var(--color-primary);
 }
 
 .nav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
-  gap: 20px;
+  padding: var(--litle-padding);
+  gap: var(--litle-gap);
   list-style: none;
   text-transform: uppercase;
 }
@@ -39,3 +47,14 @@
   padding-bottom: 20px;
 }
 
+.bg-soupe {
+  background-image: url(images/soupe.png);
+}
+
+.bg-salade {
+  background-image: url(images/salade.png);
+}
+
+.bg-dessert {
+  background-image: url(images/dessert.png);
+}
