@@ -175,3 +175,21 @@ html {
   border: none;
   padding: 5px 10px;
 }
+
+.card-sujet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 80px;
+  /* overflow: hidden; */
+}
+
+.style-mon-sujet {
+  text-transform: uppercase;
+  font-size: 12px;
+}
