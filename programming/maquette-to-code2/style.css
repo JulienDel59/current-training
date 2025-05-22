@@ -87,3 +87,14 @@
   font-size: 24px;
   padding: 0 60px;
 }
+
+.h2 {
+  border: 1px solid var(--color-primary);
+  border-left: 0;
+  border-right: 0;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: 24px;
+  text-align: center;
+  margin: 0 20px;
+}
