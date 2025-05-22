@@ -54,25 +54,14 @@ html {
   justify-content: center;
   flex-direction: row-reverse;
   padding-bottom: 20px;
-  /* position: relative; */
 }
 
-/* .search-container input[type="text"] {
-  width: 100%;
-  padding: 10px 35px 10px 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px; */
-/* } */
-
-/* .search-container .search-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
-  pointer-events: none;
-} */
+.search-icon {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--color-secondary);
+}
 
 .bg-main {
   background-color: var(--color-secondary);
