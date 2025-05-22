@@ -2,7 +2,7 @@
   --color-primary: burlywood;
   --litle-padding: 24px;
   --medium-padding: 48px;
-  --litle-gap: 20px;
+  --litle-gap: 16px;
 }
 
 .titre-img {
@@ -47,6 +47,9 @@
   padding-bottom: 20px;
 }
 
+.bg-main {
+  background-color: gray;
+}
 .bg-soupe {
   background-image: url(images/soupe.png);
 }
@@ -57,4 +60,29 @@
 
 .bg-dessert {
   background-image: url(images/dessert.png);
+}
+
+.content-ssd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--litle-gap);
+  padding: var(--litle-padding);
+}
+
+.ssd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 200px;
+}
+
+.text-ssd {
+  border: 1px solid var(--color-primary);
+  border-left: 0;
+  border-right: 0;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: 28px;
 }
