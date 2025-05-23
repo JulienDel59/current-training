@@ -84,7 +84,7 @@ html {
   flex-direction: column;
   align-items: center;
   gap: var(--medium-gap);
-  padding: var(--litle-padding);
+  padding: var(--medium-padding);
 }
 
 .ssd {
@@ -228,11 +228,29 @@ html {
   color: var(--color-white);
   text-decoration: none;
 }
+.boissons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: var(--litle-gap);
+  color: var(--color-primary);
+  height: 360px;
+  padding-bottom: 12px;
+}
+
+.btn-more {
+  width: 50%;
+}
 
 .bg-biere {
   background-image: url(images/boissons/bieres.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .bg-cafe {
   background-image: url(images/boissons/cafe.png);
+  background-size: cover;
+  background-position: center;
 }
