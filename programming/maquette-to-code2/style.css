@@ -324,4 +324,19 @@ html {
   .content-ssd {
     flex-direction: row;
   }
+  .articles-recents {
+    flex-direction: row;
+    gap: var(--medium-gap);
+  }
+  .grid-galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .img-galerie {
+    min-width: 300px;
+    min-height: 300px;
+    object-fit: cover;
+  }
 }
