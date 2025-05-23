@@ -163,7 +163,7 @@ html {
 }
 
 .card-img {
-  min-height: 190px;
+  min-height: 200px;
   object-fit: cover;
 }
 
@@ -347,15 +347,42 @@ html {
     display: grid;
     grid-template-areas: " articles articles categorie";
     grid-template-columns: 2fr 1fr;
+    gap: var(--medium-gap);
   }
 
   .categorie {
     padding-top: 0;
+    gap: var(--medium-gap);
+  }
+
+  .section-card {
+    display: grid;
+    grid-template-areas:
+      "card-tacos card-tacos"
+      "card-boeuf card-carrot"
+      "card-cookie card-cookie";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-tacos {
+    grid-area: card-tacos;
+  }
+
+  .card-beouf {
+    grid-area: card-boeuf;
+  }
+
+  .card-carrot {
+    grid-area: card-carrot;
+  }
+
+  .card-cookie {
+    grid-area: card-cookie;
   }
 
   .grid-galerie {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
+    gap: var(--litle-gap);
   }
 }
