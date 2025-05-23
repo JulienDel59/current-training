@@ -40,7 +40,6 @@ html {
   justify-content: center;
   padding: var(--litle-padding);
   gap: var(--medium-gap);
-  list-style: none;
   text-transform: uppercase;
 }
 
@@ -68,15 +67,15 @@ html {
 }
 
 .bg-soupe {
-  background-image: url(images/soupe.png);
+  background-image: url(images/ssd/soupe.png);
 }
 
 .bg-salade {
-  background-image: url(images/salade.png);
+  background-image: url(images/ssd/salade.png);
 }
 
 .bg-dessert {
-  background-image: url(images/dessert.png);
+  background-image: url(images/ssd/dessert.png);
 }
 
 .content-ssd {
@@ -91,8 +90,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
-  min-height: 220px;
+  width: 300px;
+  height: 220px;
 }
 
 .text-ssd {
@@ -142,7 +141,7 @@ html {
 .img-toque {
   position: absolute;
   top: 165px;
-  left: 110px;
+  left: 120px;
   height: 50px;
 }
 
@@ -186,8 +185,12 @@ html {
   align-items: center;
   padding: var(--litle-padding);
   gap: var(--medium-gap);
-  background-color: var(--color-primary);
   text-align: center;
+  background: radial-gradient(
+    circle,
+    var(--color-white) 0%,
+    var(--color-primary) 100%
+  );
 }
 
 .avatar {
@@ -268,4 +271,34 @@ html {
 
 .medium-size {
   font-size: 20px;
+}
+
+.galerie-photos {
+  display: flex;
+  flex-direction: column;
+  padding: var(--medium-padding);
+  gap: var(--medium-gap);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--litle-gap);
+  padding: 64px;
+  background-image: url(images/bg_footer.png);
+  background-image: url(images/Calque.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+}
+
+.logo-footer {
+  width: 160px;
+}
+
+.color-lien-foot {
+  text-decoration: none;
+  color: var(--color-white);
 }
