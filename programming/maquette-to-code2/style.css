@@ -373,12 +373,11 @@ html {
     justify-content: center;
   }
 
-  .hero {
+  .flex-articles-recents {
     display: flex;
     justify-content: center;
 
   }
-
    .articles-recents {
     display: grid;
     grid-template-areas: " articles articles categorie";
@@ -429,14 +428,15 @@ html {
 .footer {
    text-align: end; 
 }
-  .lien-and-text {
+
+.content-footer {
+ 
+}
+  
+.lien-and-text {
     display: flex;
     flex-direction: column;
      align-items: end; 
      gap: var(--large-gap);
-  }
-
-  .content-logo-footer {
-    width: 100%; 
   }
 } 
