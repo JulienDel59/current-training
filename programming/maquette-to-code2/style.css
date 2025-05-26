@@ -429,10 +429,6 @@ html {
    text-align: end; 
 }
 
-.content-footer {
- 
-}
-  
 .lien-and-text {
     display: flex;
     flex-direction: column;
@@ -440,3 +436,16 @@ html {
      gap: var(--large-gap);
   }
 } 
+
+@media (min-width: 1728px) {
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  width: 100%;
+  padding: var(--medium-padding);
+  padding-left: var(--large-padding);
+  padding-right: var(--large-padding);
+}
+  
+}
