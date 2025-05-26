@@ -128,7 +128,7 @@ html {
   align-items: center;
   justify-content: center;
   align-items: center;  
-  padding: var(--medium-padding); 
+  padding: var(--medium-padding);  
   padding-bottom: 0px; 
 }
 
@@ -202,7 +202,7 @@ html {
   flex-direction: column;
   gap: var(--medium-gap);
   padding-top: var(--litle-padding); 
-  max-width: 300px;
+  max-width: 300px; 
 }
 
 .card-sujet {
@@ -369,7 +369,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: var(--litle-padding);
   }
   .search-container {
     padding: 0;
@@ -377,17 +377,12 @@ html {
   .content-ssd {
     flex-direction: row;
   }
-  .articles-recents {
+   .articles-recents {
     display: grid;
     grid-template-areas: " articles articles categorie";
     grid-template-columns: 2fr 1fr;
     gap: var(--medium-gap);
-  }
-
-  .categorie {
-    padding-top: 0;
-    gap: var(--medium-gap); 
-  }
+  } 
 
   .section-card {
     display: grid;
@@ -396,7 +391,11 @@ html {
       "card-boeuf card-carrot"
       "card-cookie card-cookie";
     grid-template-columns: 1fr 1fr;
-  }
+    
+  } 
+   .articles {
+    max-width: none;
+   }
 
   .card-tacos {
     grid-area: card-tacos;
@@ -414,9 +413,11 @@ html {
     grid-area: card-cookie;
   }
 
+  .categorie {
+  }
   .grid-galerie {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--litle-gap);
-  }
+  }  
 }
