@@ -97,8 +97,8 @@ html {
 .ssd {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 300px;
+  justify-content: center; 
+  width: 300px; 
   height: 220px;
 }
 
@@ -124,12 +124,12 @@ html {
 }
 .articles-recents {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   align-items: center;  
   padding: var(--medium-padding);  
-  padding-bottom: 0px; 
+ padding-bottom: 0px;   
 }
 
 .articles {
@@ -137,7 +137,7 @@ html {
   flex-direction: column;
   align-items: center;  
   gap: var(--medium-gap);
-  max-width: 300px; 
+  max-width: 300px;  
 }
 
 .section-card {
@@ -149,9 +149,9 @@ html {
 .content-card {
   display: flex;
   flex-direction: column;
-  gap: var(--medium-gap);
+  gap: var(--medium-gap); 
   text-align: center;
-  padding: var(--litle-padding);
+  padding: var(--litle-padding); 
 }
 
 .bg-card {
@@ -304,20 +304,19 @@ html {
   flex-direction: column;
   align-items:center ;
   padding: var(--medium-padding);
-  gap: var(--medium-gap);
-}
+} 
 
 .div-gal {
   display: flex;
   flex-direction: column;
-  gap :var(--medium-gap)
+   gap :var(--medium-gap);
 }
-
-.flex-galalerie {
+.flex-galerie {
   display: flex;
   flex-direction: column;
   gap: var(--litle-gap);
 }
+
 
 .img-galerie {
   width: 300px;
@@ -376,12 +375,14 @@ html {
   }
   .content-ssd {
     flex-direction: row;
+    max-width: 1024px;
   }
+
    .articles-recents {
     display: grid;
     grid-template-areas: " articles articles categorie";
     grid-template-columns: 2fr 1fr;
-    gap: var(--medium-gap);
+     gap: var(--medium-gap); 
   } 
 
   .section-card {
@@ -413,11 +414,15 @@ html {
     grid-area: card-cookie;
   }
 
-  .categorie {
+  .categorie {;
+    height: 100%; 
+    padding-top:0px;  
+    
   }
+
   .grid-galerie {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--litle-gap);
   }  
-}
+} 
