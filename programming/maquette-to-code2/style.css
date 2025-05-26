@@ -373,13 +373,19 @@ html {
     justify-content: center;
   }
 
+  .hero {
+    display: flex;
+    justify-content: center;
+
+  }
+
    .articles-recents {
     display: grid;
     grid-template-areas: " articles articles categorie";
     grid-template-columns: 2fr 1fr;
      gap: var(--medium-gap); 
-     justify-self: center;
-     max-width: 1024px;
+    justify-self:center;
+    max-width: 1024px;  
   } 
 
   .section-card {
