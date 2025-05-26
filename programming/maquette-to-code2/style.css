@@ -437,7 +437,7 @@ html {
   }
 } 
 
-@media (min-width: 1728px) {
+ @media (min-width: 1728px) {
 .content-footer {
   display: flex;
   flex-direction: column;
@@ -446,6 +446,6 @@ html {
   padding: var(--medium-padding);
   padding-left: var(--large-padding);
   padding-right: var(--large-padding);
-}
+} 
   
-}
+}  
