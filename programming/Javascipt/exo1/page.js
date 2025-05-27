@@ -1,4 +1,4 @@
-let age = 19;
+let age = 29;
 const majeur = 18;
 
-console.log(age > majeur);
+console.log(age >= majeur);
