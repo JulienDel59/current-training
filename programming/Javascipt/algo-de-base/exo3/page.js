@@ -4,7 +4,6 @@ NomEntier = prenom + nom;
 console.log(NomEntier);
 
 
-
 let sujet = "Le chat" ;
 let verbe = " mange";
 let objet = " la souris";
