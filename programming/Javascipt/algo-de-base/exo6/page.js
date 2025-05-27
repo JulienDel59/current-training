@@ -6,6 +6,11 @@ let personne = {
 
 console.log(personne);
 
+let compteBancaire = {
+    titulaire: 'John Doe',
+    solde : 1000,
+};
 
+console.log(compteBancaire);
 
     
