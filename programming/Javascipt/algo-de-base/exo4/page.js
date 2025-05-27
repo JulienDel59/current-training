@@ -7,7 +7,7 @@ saluer("bonjour alice");
 
 
  function multiplication (a,b) {
-    console.log(a * b);
+    return a * b;
 }
 
-multiplication(7 , 8);
+console.log( multiplication(7 , 8));
