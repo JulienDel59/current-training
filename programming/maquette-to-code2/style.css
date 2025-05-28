@@ -203,7 +203,7 @@ html {
   color: var(--color-white);
   border: none;
   padding: 5px 10px;
-}
+} 
 
 .categorie {
   display: flex;
