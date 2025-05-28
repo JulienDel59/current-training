@@ -334,6 +334,16 @@ html {
   padding: 64px;
   color:var(--color-white);
 }
+ .content-logo-footer {
+  display: flex;
+  justify-content: center;
+} 
+
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--large-gap);
+} 
 
 .lien-and-text {
   display: flex;
@@ -437,11 +447,15 @@ html {
   }
 } 
 
+.content-logo-footer {
+  justify-content: start;
+} 
+
  @media (min-width: 1728px) {
 .content-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;  
   width: 100%;
   padding: var(--medium-padding);
   padding-left: var(--large-padding);
