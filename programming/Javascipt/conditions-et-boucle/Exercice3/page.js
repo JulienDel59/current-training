@@ -8,6 +8,11 @@ while (guess !== secretNumber) {
   // Demander à l'utilisateur de deviner
   guess = parseInt(prompt("Devinez un nombre entre 1 et 100 :"));
 
+
+  if (isNaN(guess)) {
+  alert("Ce n'est pas un nombre valide !");
+  continue; // Recommence la boucle sans compter cette tentative
+  }
   attempts++;
 
   if (guess < secretNumber) {
@@ -18,3 +23,4 @@ while (guess !== secretNumber) {
     alert("Bravo ! Vous avez trouvé le nombre en " + attempts + " tentative(s).");
   }
 }
+
