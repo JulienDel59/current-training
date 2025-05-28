@@ -40,7 +40,7 @@ console.log(phrase);
 
 let idType = data.topping[6].type;
 let name2 = data.name;
-phrase2 =  idType + " est une des idées de " + name2; 
+phrase2 =  idType + " est une des id de " + name2; 
 console.log(phrase2);
 
 
