@@ -28,4 +28,8 @@ let data = {
 
 console.log(data.name)
 console.log(data.ppu)
-)
+console.log(data.topping)
+console.log(data.batters)
+
+
+
