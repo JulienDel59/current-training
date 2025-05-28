@@ -29,7 +29,20 @@ let data = {
 console.log(data.name)
 console.log(data.ppu)
 console.log(data.topping)
-console.log(data.batters)
+console.log(data.batters.batter[3].type)
+console.log(data.topping[6].type)
+console.log(data.topping[0].id)
+
+let rickId = data.batters.batter[0].id;
+let rickType = data.batters.batter[0].type;
+phrase = rickType + " est l'id " + rickId;
+console.log(phrase);
+
+let idType = data.topping[6].type;
+let name2 = data.name;
+phrase2 =  idType + " est une des idées de " + name2; 
+console.log(phrase2);
+
 
 
 
