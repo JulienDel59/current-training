@@ -6,4 +6,4 @@ function verifierMajorite(age) {
     }
 }
 
-verifierMajorite(30);
+verifierMajorite(15);
