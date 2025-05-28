@@ -396,12 +396,9 @@ html {
 
   }
    .articles-recents {
-    display: grid;
-    grid-template-areas: " articles articles categorie";
-    grid-template-columns: 2fr 1fr;
-     gap: var(--medium-gap); 
-    justify-self:center;
-    max-width: 1024px;  
+     display: flex;
+     flex-direction: row;
+     max-width: 1024px;  
   } 
 
   .section-card {
@@ -434,7 +431,8 @@ html {
 
   .categorie {
     height: 100%; 
-    padding-top:0px;  
+    padding-top:0px;
+    padding-left: 24px;
   }
 
   .grid-galerie {
@@ -469,4 +467,4 @@ html {
   padding-right: var(--large-padding);
 } 
   
-}  
+}   
