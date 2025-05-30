@@ -1,0 +1,21 @@
+.tilte {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+
+.morpion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgba(153, 205, 50, 0.76);
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    gap: 5px;
+    
+}
+
+.case {
+    background-color: gray;
+}
