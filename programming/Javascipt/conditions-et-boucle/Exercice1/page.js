@@ -10,15 +10,15 @@ console.log(verifierMajorite(15));
 
 // :::::::::
 
-// function verifAge(age){
-//     if (age >= 18){
-//         return "majeur";       
-//     }
-//     else {
-//         return "mineur";
-//     }
-// }
+function verifAge(age){
+    if (age >= 18){
+        return "Majeur";       
+    }
+    else {
+        return "Mineur";
+    }
+}
 
 
-// let verif = verifAge(18);
-// console.log(verif);
+let verif = verifAge(15);
+console.log(verif);

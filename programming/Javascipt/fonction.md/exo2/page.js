@@ -7,5 +7,5 @@ function mergeArrays(tab1, tab2) {
 
 console.log(mergeArrays(table, table2));
 
-
+// :::::::::
 
