@@ -11,7 +11,7 @@ function getNombreDeJours(mois, annee) {
 }
 
 // Exemples d'utilisation :
-console.log(getNombreDeJours(2, 2024)); // 29 (année bissextile)
+console.log(getNombreDeJours(2, 2023)); // 29 (année bissextile)
 console.log(getNombreDeJours(2, 2023)); // 28 (non bissextile)
 console.log(getNombreDeJours(2, 2021)); // 30 (avril)
 console.log(getNombreDeJours(2, 2022)); // 31 (décembre)
