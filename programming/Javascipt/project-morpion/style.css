@@ -1,8 +1,22 @@
+.header {
+    background-color: saddlebrown;
+}
+
 .tilte {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
   
+.plateau {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 650px;
+    border: solid 2px black;
+    margin: auto;
+    background-color: saddlebrown;
+    
+}
 
 .morpion {
     display: grid;
@@ -12,8 +26,8 @@
     width: 600px;
     height: 600px;
     margin: 100px auto;
-    gap: 5px;
-    
+    gap: 5px; 
+    border: solid 2px black;
 }
 
 .case {
