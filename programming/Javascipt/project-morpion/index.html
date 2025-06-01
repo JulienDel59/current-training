@@ -9,25 +9,28 @@
 </head>
 <body class="body">
     <header class="header">
+      
         <h1 class="tilte">Morpion</h1>
-        <nav class="nav">
 
-            <form class="form-choix">
+          <nav class="nav">
+            <form class="formChoix">
               <label>
-               <input type="radio" name="choix" value="option1"> Rond
+               <input type="radio" name="choix" value="option1"> Aléatoire
               </label>
               <label>
-               <input type="radio" name="choix" value="option2"> Croix
-              </label><br>
-              <button type="submit">Choisir</button>
+               <input type="radio" name="choix" value="option2"> Rond
+              </label>
+              <label>
+               <input type="radio" name="choix" value="option3"> Croix
+              </label>
+              <button type="submit" class="btnPlay">Commencer</button>
             </form>
+          </nav>
 
-            <button type="button" class="btnChoix">Commncer</button> 
-
-        </nav>
     </header>
-
+  
     <main class="main">
+
      <section class="plateau">
        <div class="morpion">
         <div class="case case1"></div>
@@ -41,6 +44,7 @@
         <div class="case case9"></div> 
        </div>
      </section>
+
     </main>
 </body>
 </html>

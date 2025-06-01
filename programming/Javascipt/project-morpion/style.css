@@ -1,35 +1,55 @@
-.header {
-    background-color: saddlebrown;
+.body {
+     background-color:burlywood ;
 }
+
+.header {
+    background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327); 
+ 
+    border: 1px solid #7D5A3C; 
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
+}
+
 
 .tilte {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 12px;
 }
-  
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.formChoix {
+    display: flex;
+    gap: 10px;   
+}
+
+
 .plateau {
     display: flex;
     align-items: center;
-    width: 650px;
-    height: 650px;
+    width: 360px;
+    height: 360px;
     border: solid 2px black;
-    margin: auto;
+    margin:24px auto ;
     background-color: saddlebrown;
-    
 }
 
 .morpion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: rgba(153, 205, 50, 0.76);
-    width: 600px;
-    height: 600px;
+    background-color:  saddlebrown;
+    width: 300px;
+    height: 300px;
     margin: 100px auto;
     gap: 5px; 
     border: solid 2px black;
 }
 
 .case {
-    background-color: gray;
+    background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327);
 }
