@@ -1,3 +1,7 @@
+html {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .body {
      background-color:burlywood ;
 }
@@ -5,30 +9,59 @@
 .header {
     background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327); 
  
-    border: 1px solid #7D5A3C; 
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
 }
 
 
 .tilte {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 12px;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 12px;
 }
 
-.formChoix {
+.divBtnPlay {
     display: flex;
-    gap: 10px;   
+    justify-content: center;
+    padding: 12px;
+
+    /* background-color: #4E3327; */  
+}
+
+.btnPlay {
+    background-color:  saddlebrown;
+    padding: 6px 12px;
+    border:2px solid black;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large; 
+    transition: background-color 2s ease, transform 0.2s ease;
+}
+
+.btnPlay:hover {
+    background-color:burlywood;
+    transform: scale(1.05);
+}
+
+.btnPlay:active {
+    transform: scale(0.98);
+  }
+
+.sectionScore {
+    display: flex;
+    justify-content: center;
+    gap:5px
+}
+
+.divPlayer {
+    display: flex;
+    gap:15px;
+}
+
+.divPlayer2 {
+    flex-direction: row-reverse;
 }
 
 
-.plateau {
+.SectionPlateau {
     display: flex;
     align-items: center;
     width: 360px;

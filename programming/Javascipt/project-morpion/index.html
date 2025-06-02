@@ -8,30 +8,31 @@
     <title>Morpion</title>
 </head>
 <body class="body">
+  
     <header class="header">
-      
-        <h1 class="tilte">Morpion</h1>
-
-          <nav class="nav">
-            <form class="formChoix">
-              <label>
-               <input type="radio" name="choix" value="option1"> Aléatoire
-              </label>
-              <label>
-               <input type="radio" name="choix" value="option2"> Rond
-              </label>
-              <label>
-               <input type="radio" name="choix" value="option3"> Croix
-              </label>
-              <button type="submit" class="btnPlay">Commencer</button>
-            </form>
-          </nav>
-
+      <h1 class="tilte">Morpion</h1>
     </header>
   
     <main class="main">
 
-     <section class="plateau">
+      <section class="sectionMenu">
+        <div class="divBtnPlay">
+         <button type="button" class="btnPlay">Jouer</button>
+        </div>
+      </section>
+
+      <section class="sectionScore">
+        <div class="divPlayer1 divPlayer">
+          <p>Joueur 1</p>
+          <p>score</p>
+        </div>
+        <div class="divPlayer2 divPlayer">
+          <p>Joueur 2</p>
+          <p>score</p>
+        </div>
+      </section>
+
+     <section class="SectionPlateau">
        <div class="morpion">
         <div class="case case1"></div>
         <div class="case case2"></div>
