@@ -21,9 +21,7 @@ html {
 .divBtnPlay {
     display: flex;
     justify-content: center;
-    padding: 12px;
-
-    /* background-color: #4E3327; */  
+    padding: 12px; 
 }
 
 .btnPlay {
