@@ -5,6 +5,7 @@ let gameActive = true; // Variable pour savoir si le jeu est encore actif
 
 // Sélectionner toutes les cases
 const cells = document.querySelectorAll('.case');
+const play = document.querySelectorAll('.btnPlay');
 
 // Fonction pour gérer les clics sur les cases
 function handleCellClick(event) {
@@ -24,10 +25,12 @@ function handleCellClick(event) {
             alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
         }, 200);
-    } else {
+    
+      } else {
         // Changer de joueur
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    }
+     }
+   
 }
 
 // Fonction pour vérifier si un joueur a gagné
