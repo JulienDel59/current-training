@@ -84,3 +84,23 @@ html {
 .case {
     background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327);
 }
+
+.case.X, .case.O {
+    font-size: 3em; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    
+}
+
+.case.X {
+    font-family: 'Impact', sans-serif;
+    color: #e04e39; 
+}
+
+.case.O {
+    font-family: 'Arial', sans-serif;
+    color: #2f8f7f; 
+}
