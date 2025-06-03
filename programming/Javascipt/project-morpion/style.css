@@ -19,10 +19,25 @@ html {
     padding: 12px;
 }
 
+.divChoixPseudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 12px; 
+  
+}
+
+.pseudo {
+    display: flex;
+    gap: 12px;
+}
+
 .divBtnPlay {
     display: flex;
     justify-content: center;
     padding: 12px; 
+    padding-top: 24px;
 }
 
 .btnPlay {

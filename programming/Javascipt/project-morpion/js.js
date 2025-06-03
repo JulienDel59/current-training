@@ -4,6 +4,8 @@ let gameBoard = ['', '', '', '', '', '', '', '', '']; // Tableau pour suivre l'�
 let gameActive = true; // Variable pour savoir si le jeu est encore actif
 let scoreX = 0;
 let scoreO = 0;
+let pseudo1 = '';
+let pseudo2 = '';
 
 // Sélectionner toutes les cases
 const cells = document.querySelectorAll('.case');
@@ -26,14 +28,14 @@ function handleCellClick(event) {
 
     // Vérifier si quelqu'un a gagné
     if (checkWinner()) {
-            if (currentPlayer === 'X') {
+        // ajouter le score
+        if (currentPlayer === 'X') {
         scoreX++;
         scoreXDisplay.textContent = scoreX;
        } else {
         scoreO++;
         scoreODisplay.textContent = scoreO;
        } 
-
         setTimeout(() => {
             alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
@@ -48,8 +50,8 @@ function handleCellClick(event) {
       }else {
         // Changer de joueur
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+     }
     }
-      }
 }
 
 
@@ -103,7 +105,28 @@ function enableBoard() {
 // Sélectionne le bouton de réinitialisation
 const btnPlay = document.getElementById('btnPlay');
 
+// Sélectionne le texte des pseudos
+const namePlayer1Display = document.getElementById('namePlayer1');
+const namePlayer2Display = document.getElementById('namePlayer2');
+
+
+// Ajouter un événement de clic sur le bouton de réinitialisation
 btnPlay.addEventListener('click', () => {
+    const player1 = document.getElementById('player1').value.trim()
+    const player2 = document.getElementById('player2').value.trim()
+    if (player1 === '' || player2 === '') {
+        alert("Veuillez entrer un pseudo pour les deux joueurs.");
+        return; // On arrête ici si les pseudos sont vides
+    }
+
+    // Met à jour les variables globales
+    pseudo1 = player1;
+    pseudo2 = player2;
+
+    // Met à jour les noms dans la section score
+    namePlayer1Display.textContent = pseudo1;
+    namePlayer2Display.textContent = pseudo2;
+
     resetGame(); // Réinitialise le plateau
     enableBoard();   // Active les clics
 });
