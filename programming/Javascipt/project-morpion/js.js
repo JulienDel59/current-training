@@ -26,13 +26,20 @@ function handleCellClick(event) {
             alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
         }, 200);
-    
       } else {
+        // verifier si nul
+          if (!gameBoard.includes('')) {
+        setTimeout(() => {
+            alert("Match nul !");
+            resetGame();
+        }, 200);
+      }else {
         // Changer de joueur
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-     }
-   
+    }
+      }
 }
+
 
 // Fonction pour vérifier si un joueur a gagné
 function checkWinner() {
