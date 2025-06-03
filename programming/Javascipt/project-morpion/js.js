@@ -5,7 +5,8 @@ let gameActive = true; // Variable pour savoir si le jeu est encore actif
 
 // Sélectionner toutes les cases
 const cells = document.querySelectorAll('.case');
-const play = document.querySelectorAll('.btnPlay');
+
+
 
 // Fonction pour gérer les clics sur les cases
 function handleCellClick(event) {
@@ -71,7 +72,21 @@ function resetGame() {
 // Ajouter un événement de clic sur chaque cellule
 cells.forEach((cell, index) => {
     cell.dataset.index = index; // Ajouter un attribut data-index pour identifier la case
-    cell.addEventListener('click', handleCellClick); // Ajouter l'événement de clic
+});
+
+//Ajouter l'événement de clic
+function enableBoard() {
+    cells.forEach(cell => {
+        cell.addEventListener('click', handleCellClick);
+    });
+}
+
+// Sélectionne le bouton de réinitialisation
+const btnPlay = document.getElementById('btnPlay');
+
+btnPlay.addEventListener('click', () => {
+    resetGame(); // Réinitialise le plateau
+    enableBoard();   // Active les clics
 });
 
 
