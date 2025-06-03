@@ -7,6 +7,7 @@ let scoreO = 0;
 let pseudo1 = '';
 let pseudo2 = '';
 
+
 // Sélectionner toutes les cases
 const cells = document.querySelectorAll('.case');
 
@@ -137,3 +138,9 @@ btnPlay.addEventListener('click', () => {
     enableBoard();   // Active les clics
 });
 
+initHackConsole();
+console.log("Bienvenue dans la console Matrix !");
+setTimeout(() => {
+  console.log("Vous pouvez retirer la console à tout moment.");
+  removeHackConsole();
+}, 10000);
