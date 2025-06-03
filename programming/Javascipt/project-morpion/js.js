@@ -89,5 +89,3 @@ btnPlay.addEventListener('click', () => {
     enableBoard();   // Active les clics
 });
 
-
-  
