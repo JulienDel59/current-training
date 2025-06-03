@@ -123,6 +123,12 @@ btnPlay.addEventListener('click', () => {
     pseudo1 = player1;
     pseudo2 = player2;
 
+    // Réinitialise les scores
+    scoreX = 0;
+    scoreO = 0;
+    scoreXDisplay.textContent = scoreX;
+    scoreODisplay.textContent = scoreO;
+
     // Met à jour les noms dans la section score
     namePlayer1Display.textContent = pseudo1;
     namePlayer2Display.textContent = pseudo2;
