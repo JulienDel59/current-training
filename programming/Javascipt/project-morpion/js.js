@@ -138,8 +138,8 @@ const namePlayer2Display = document.getElementById('namePlayer2');
 
 // Ajouter un événement de clic sur le bouton de réinitialisation
 btnPlay.addEventListener('click', () => {
-    const player1 = document.getElementById('player1').value.trim()
-    const player2 = document.getElementById('player2').value.trim()
+    const player1 = document.getElementById('player1').value.trim();
+    const player2 = document.getElementById('player2').value.trim();
     if (player1 === '' || player2 === '') {
         alert("Veuillez entrer un pseudo pour les deux joueurs.");
         return; // On arrête ici si les pseudos sont vides
@@ -155,7 +155,7 @@ btnPlay.addEventListener('click', () => {
              document.querySelector('.divChoixPseudo').classList.remove('hidden');
              btnPlay.textContent = "Jouer";
              resetGame(); //Réinitialise le plateau
-             disableBoard() // Désactive les clics
+             disableBoard(); // Désactive les clics
             break;
         
            
@@ -173,9 +173,6 @@ btnPlay.addEventListener('click', () => {
     // Met à jour les noms dans la section score
     namePlayer1Display.textContent = pseudo1;
     namePlayer2Display.textContent = pseudo2;
-
-    // resetGame(); // Réinitialise le plateau
-    // enableBoard();  // Active les clics
 
     
 });
