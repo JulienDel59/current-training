@@ -37,6 +37,22 @@ function handleCellClick(event) {
         scoreO++;
         scoreODisplay.textContent = scoreO;
        } 
+
+        // Lancer les confettis
+      confetti({
+      particleCount: 150,
+      spread: 100,
+      angle: 60,
+      origin: { x: 0, y: 0.5 }
+      });
+
+      confetti({
+      particleCount: 150,
+      spread: 100,
+      angle: 120,
+      origin: { x: 1, y: 0.5 }
+     });
+     
         setTimeout(() => {
             alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
@@ -136,11 +152,7 @@ btnPlay.addEventListener('click', () => {
 
     resetGame(); // Réinitialise le plateau
     enableBoard();   // Active les clics
+
+    btnPlay.textContent = "Rejouer";
 });
 
-initHackConsole();
-console.log("Bienvenue dans la console Matrix !");
-setTimeout(() => {
-  console.log("Vous pouvez retirer la console à tout moment.");
-  removeHackConsole();
-}, 10000);

@@ -121,12 +121,3 @@ html {
     font-family: 'Impact', sans-serif;
     color: #2f8f7f; 
 }
-
-.case.victoire {
-    animation: victoireFlash 0.5s ease alternate 4;
-}
-
-@keyframes victoireFlash {
-    0% { background-color: #9B6D45; }
-    100% { background-color: gold; }
-}
