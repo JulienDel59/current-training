@@ -52,7 +52,7 @@ function handleCellClick(event) {
       angle: 120,
       origin: { x: 1, y: 0.5 }
      });
-     
+
         setTimeout(() => {
             alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
@@ -135,6 +135,9 @@ btnPlay.addEventListener('click', () => {
         alert("Veuillez entrer un pseudo pour les deux joueurs.");
         return; // On arrête ici si les pseudos sont vides
     }
+
+    // Masquer les champs de saisie des pseudos
+     document.querySelector('.divChoixPseudo').classList.add('hidden');
 
     // Met à jour les variables globales
     pseudo1 = player1;

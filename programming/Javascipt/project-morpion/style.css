@@ -19,6 +19,7 @@ html {
     padding: 12px;
 }
 
+
 .divChoixPseudo {
     display: flex;
     flex-direction: column;
@@ -31,6 +32,10 @@ html {
 .pseudo {
     display: flex;
     gap: 12px;
+}
+
+.hidden {
+    display: none;
 }
 
 .divBtnPlay {
