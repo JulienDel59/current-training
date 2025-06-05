@@ -4,6 +4,7 @@ let gameBoard = ['', '', '', '', '', '', '', '', '']; // Tableau pour suivre l'�
 let gameActive = true; // Variable pour savoir si le jeu est encore actif
 let scoreX = 0;
 let scoreO = 0;
+let scoreNull = 0;
 let pseudo1 = '';
 let pseudo2 = '';
 
@@ -14,6 +15,7 @@ const cells = document.querySelectorAll('.case');
 // Sélectionner les éléments affichant les scores
 const scoreXDisplay = document.getElementById('scoreX');
 const scoreODisplay = document.getElementById('scoreO');
+const scoreNullDisplay = document.getElementById('scoreNull');
 
 // Sélectionne l'élément du message gagnant
 const winnerMessage = document.getElementById('winnerMessage');
@@ -53,15 +55,25 @@ function handleCellClick(event) {
         setTimeout(() => {
             resetGame(); // Réinitialiser le jeu après la victoire
              winnerMessage.classList.add('hidden'); // Cache à nouveau le message
-        }, 2500);
+        }, 3000);
       } else {
-        // verifier si nul
-          if (!gameBoard.includes('')) {
-        setTimeout(() => {
-            
-            resetGame();
-        }, 200);
+        if (!gameBoard.includes('')) {
+        winnerMessage.textContent = "Match nul !";
+        winnerMessage.classList.remove('hidden');
+
+        scoreNull++;
+        scoreNullDisplay.textContent = scoreNull;
+
+        // Ajoute l’animation à toutes les cases
+         cells.forEach(cell => cell.classList.add('win'));
+
+         setTimeout(() => {
+         resetGame();
+         winnerMessage.classList.add('hidden');
+         cells.forEach(cell => cell.classList.remove('win'));
+       }, 3000);
       }else {
+
         // Changer de joueur
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
      }
@@ -165,8 +177,10 @@ btnPlay.addEventListener('click', () => {
     // Réinitialise les scores
     scoreX = 0;
     scoreO = 0;
+    scoreNull=0;
     scoreXDisplay.textContent = scoreX;
     scoreODisplay.textContent = scoreO;
+    scoreNullDisplay.textContent = scoreNull;
 
     // Met à jour les noms dans la section score
     namePlayer1Display.textContent = pseudo1;
