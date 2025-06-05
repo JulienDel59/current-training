@@ -28,7 +28,11 @@ function handleCellClick(event) {
     event.target.classList.add(currentPlayer); // Ajouter la classe X ou O pour changer la couleur
 
     // Vérifier si quelqu'un a gagné
-    if (checkWinner()) {
+    const winningLine = checkWinner();
+    if (winningLine) {
+          winningLine.forEach(index => {
+        cells[index].classList.add('win');
+            });
         // ajouter le score
         if (currentPlayer === 'X') {
         scoreX++;
@@ -54,14 +58,14 @@ function handleCellClick(event) {
      });
 
         setTimeout(() => {
-            alert(`${currentPlayer} a gagné !`);
+            // alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
-        }, 200);
+        }, 2000);
       } else {
         // verifier si nul
           if (!gameBoard.includes('')) {
         setTimeout(() => {
-            alert("Match nul !");
+            
             resetGame();
         }, 200);
       }else {
@@ -89,7 +93,7 @@ function checkWinner() {
     for (let condition of winConditions) {
         const [a, b, c] = condition;
         if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
-            return true; // Si une condition est remplie, retour gagnant
+            return [a, b, c]; // Si une condition est remplie, retour gagnant
         }
     }
 
@@ -103,6 +107,7 @@ function resetGame() {
     cells.forEach(cell => {
         cell.textContent = ''; // Vider le contenu de chaque case
         cell.classList.remove('X', 'O'); // Retirer les classes X et O
+        cell.classList.remove('win');
     });
     currentPlayer = 'X'; // Recommencer avec X
 }

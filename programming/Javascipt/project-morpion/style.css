@@ -105,6 +105,7 @@ html {
 
 .case {
     background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327);
+    box-shadow: inset 5px 5px  10px black ;
 }
 
 .case.X, .case.O {
@@ -119,10 +120,22 @@ html {
 
 .case.X {
     font-family: 'Impact', sans-serif;
-    color: #e04e39; 
+    color: #e6dbc9; 
 }
 
 .case.O {
     font-family: 'Impact', sans-serif;
-    color: #2f8f7f; 
+    color:	#2b2b2b; 
 }
+
+@keyframes highlight-win {
+  0% {  transform: scale(1); }
+  50% {  transform: scale(1.1); }
+  100% {  transform: scale(1); }
+}
+
+.case.win {
+  animation: highlight-win 1s ease-in-out infinite;
+  z-index: 1;
+}
+
