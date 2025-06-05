@@ -134,8 +134,28 @@ html {
   100% {  transform: scale(1); }
 }
 
+@keyframes green-border {
+  0% { border: 4px solid burlywood; }
+  50% { border: 4px solid burlywood; }
+  100% { border: 4px solid burlywood; }
+}
+
 .case.win {
-  animation: highlight-win 1s ease-in-out infinite;
+  animation: highlight-win 1s ease-in-out infinite,green-border 1s ease-in-out infinite;
   z-index: 1;
+}
+
+#winnerMessage {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 12px;
+  color: saddlebrown;
+  text-shadow: 1px 1px 2px black;
+  animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 

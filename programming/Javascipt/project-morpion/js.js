@@ -15,6 +15,9 @@ const cells = document.querySelectorAll('.case');
 const scoreXDisplay = document.getElementById('scoreX');
 const scoreODisplay = document.getElementById('scoreO');
 
+// Sélectionne l'élément du message gagnant
+const winnerMessage = document.getElementById('winnerMessage');
+
 // Fonction pour gérer les clics sur les cases
 function handleCellClick(event) {
     const index = event.target.dataset.index; // Obtenir l'index de la case cliquée
@@ -42,25 +45,15 @@ function handleCellClick(event) {
         scoreODisplay.textContent = scoreO;
        } 
 
-        // Lancer les confettis
-      confetti({
-      particleCount: 150,
-      spread: 100,
-      angle: 60,
-      origin: { x: 0, y: 0.5 }
-      });
-
-      confetti({
-      particleCount: 150,
-      spread: 100,
-      angle: 120,
-      origin: { x: 1, y: 0.5 }
-     });
+        // Affiche le message gagnant
+        const winnerName = currentPlayer === 'X' ? pseudo1 : pseudo2;
+        winnerMessage.textContent = `${winnerName} a gagné ! `;
+        winnerMessage.classList.remove('hidden');
 
         setTimeout(() => {
-            // alert(`${currentPlayer} a gagné !`);
             resetGame(); // Réinitialiser le jeu après la victoire
-        }, 2000);
+             winnerMessage.classList.add('hidden'); // Cache à nouveau le message
+        }, 2500);
       } else {
         // verifier si nul
           if (!gameBoard.includes('')) {
@@ -178,7 +171,6 @@ btnPlay.addEventListener('click', () => {
     // Met à jour les noms dans la section score
     namePlayer1Display.textContent = pseudo1;
     namePlayer2Display.textContent = pseudo2;
-
-    
+   
 });
 
