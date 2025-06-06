@@ -28,13 +28,8 @@ html {
    background-size: cover;
 }
 
-.body {
- 
-     
-}
-
 .header {
-    /* background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327);  */
+     /* background: linear-gradient(135deg, #9B6D45, #7A4B32, #A5785D, #4E3327);   */
  
 }
 
@@ -190,6 +185,41 @@ html {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.custom-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.custom-alert.hidden {
+  display: none;
+}
+
+.custom-alert-box {
+  background: var(--color-secondary);
+  color: var(--color-trimary);
+  padding: var(--large-padding);
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+}
+
+.custom-alert-box button {
+  margin-top: var(--medium-padding);
+  padding: var(--small-padding) var(--medium-padding);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+}
 
 

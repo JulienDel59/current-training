@@ -151,7 +151,7 @@ btnPlay.addEventListener('click', () => {
     const player1 = document.getElementById('player1').value.trim();
     const player2 = document.getElementById('player2').value.trim();
     if (player1 === '' || player2 === '') {
-        alert("Veuillez entrer un pseudo pour les deux joueurs.");
+        showCustomAlert("Veuillez entrer un pseudo pour les deux joueurs.");
         return; // On arrête ici si les pseudos sont vides
     }
     switch (btnPlay.textContent ) {
@@ -187,4 +187,16 @@ btnPlay.addEventListener('click', () => {
     namePlayer2Display.textContent = pseudo2;
    
 });
+
+function showCustomAlert(message) {
+    const alertBox = document.getElementById('customAlert');
+    const alertMessage = document.getElementById('customAlertMessage');
+    alertMessage.textContent = message;
+    alertBox.classList.remove('hidden');
+
+    const closeBtn = document.getElementById('customAlertClose');
+    closeBtn.onclick = () => {
+        alertBox.classList.add('hidden');
+    };
+}
 
