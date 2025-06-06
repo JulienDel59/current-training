@@ -3,7 +3,6 @@
             console.log("Bouton cliqué : " + boutonClique.id);
         }
 
-    //     function showId(clicked_id)
-    // {
+    //     function showId(clicked_id) {
     //     console.log(clicked_id);
     // }

@@ -9,7 +9,7 @@
     //         }
     //     });
 
-                function suprimeElement() {
+            function suprimeElement() {
             const liste = document.getElementById("maListe");
             const premierLi = liste.querySelector("li");
 
