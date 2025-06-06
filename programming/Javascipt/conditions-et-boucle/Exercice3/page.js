@@ -6,7 +6,8 @@ let attempts = 0; // nombre de tentatives
 
 while (guess !== secretNumber) {
   // Demander à l'utilisateur de deviner
-  guess = parseInt(prompt("Devinez un nombre entre 1 et 100 :"));
+  guess = (prompt("Devinez un nombre entre 1 et 100 :"));
+  //  guess = parseInt(prompt("Devinez un nombre entre 1 et 100 :"));
 
 
   if (isNaN(guess)) {
