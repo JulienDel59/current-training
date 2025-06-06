@@ -11,7 +11,7 @@ function getNombreDeJours(mois, annee) {
 }
 
 // Exemples d'utilisation :
-console.log(getNombreDeJours(2, 2023));
+console.log(getNombreDeJours(2, 2024));
 console.log(getNombreDeJours(2, 2023)); 
 console.log(getNombreDeJours(2, 2021)); 
 console.log(getNombreDeJours(2, 2022)); 
