@@ -1,4 +1,5 @@
-let mois = 1 ;
+let mois = 2 ;
+let annee = 1997;
 
 function getNombreDeJours(mois, annee) {
   switch (mois) {
@@ -44,7 +45,7 @@ function getNombreDeJours(mois, annee) {
       break;
 
     case 10:
-       console.log(31);;
+       console.log(31);
       break;
 
     case 11:
@@ -60,3 +61,5 @@ function getNombreDeJours(mois, annee) {
       break;
   }
 }
+
+getNombreDeJours(mois, annee);
