@@ -6,5 +6,4 @@ document.addEventListener('mousemove', (cursor) => {
 
     console.log(cursor.clientX, cursor.clientY);
     
-    
 });
