@@ -1,5 +1,6 @@
-let mois = 2 ;
-let annee = 1997;
+let choixMois = 2 ;
+let choixAnnee = 2025;
+
 
 function getNombreDeJours(mois, annee) {
   switch (mois) {
@@ -8,7 +9,6 @@ function getNombreDeJours(mois, annee) {
       break;
 
     case 2:
-      // Vérifie si l'année est bissextile
       if ((annee % 4 === 0 && annee % 100 !== 0) || (annee % 400 === 0)) {
           console.log(29);
       } else {
@@ -25,7 +25,7 @@ function getNombreDeJours(mois, annee) {
       break;
 
     case 5:
-        console.log(31);;
+        console.log(31);
       break;
 
     case 6:
@@ -37,7 +37,7 @@ function getNombreDeJours(mois, annee) {
       break;
 
     case 8:
-        console.log(31);;
+        console.log(31);
       break;
 
     case 9:
@@ -62,4 +62,4 @@ function getNombreDeJours(mois, annee) {
   }
 }
 
-getNombreDeJours(mois, annee);
+getNombreDeJours(choixMois, choixAnnee);
