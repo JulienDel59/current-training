@@ -50,12 +50,13 @@ function handleCellClick(event) {
         // Affiche le message gagnant
         const winnerName = currentPlayer === 'X' ? pseudo1 : pseudo2;
         winnerMessage.textContent = `${winnerName} a gagné ! `;
-        winnerMessage.classList.remove('hidden');
+        winnerMessage.classList.remove('hidden')
 
         setTimeout(() => {
             resetGame(); // Réinitialiser le jeu après la victoire
              winnerMessage.classList.add('hidden'); // Cache à nouveau le message
         }, 3000);
+
       } else {
         if (!gameBoard.includes('')) {
         winnerMessage.textContent = "Match nul !";
@@ -98,7 +99,7 @@ function checkWinner() {
     for (let condition of winConditions) {
         const [a, b, c] = condition;
         if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
-            return [a, b, c]; // Si une condition est remplie, retour gagnant
+            return [a, b, c]; // Si une condition est remplie
         }
     }
 

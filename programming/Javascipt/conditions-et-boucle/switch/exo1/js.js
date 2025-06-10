@@ -126,7 +126,7 @@ switch (month) {
 
 }
 
-let nombreDeJour =  cbDeJourDansLeMois (6)
+let nombreDeJour =  cbDeJourDansLeMois (2)
 console.log( nombreDeJour)
 
 
