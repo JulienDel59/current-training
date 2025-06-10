@@ -154,6 +154,7 @@ btnPlay.addEventListener('click', () => {
         showCustomAlert("Veuillez entrer un pseudo pour les deux joueurs.");
         return; // On arrête ici si les pseudos sont vides
     }
+
     switch (btnPlay.textContent ) {
         case "Jouer":
             document.querySelector('.divChoixPseudo').classList.add('hidden');
@@ -167,9 +168,11 @@ btnPlay.addEventListener('click', () => {
              resetGame(); //Réinitialise le plateau
              disableBoard(); // Désactive les clics
             break;
-        
-           
+            
+            default:
+            break      
     }
+
     // Met à jour les variables globales
     pseudo1 = player1;
     pseudo2 = player2;
