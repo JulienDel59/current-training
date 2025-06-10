@@ -16,7 +16,7 @@ switch (day) {
      case 4:
         console.log(" Salade composée");
     break;
-    
+
      case 5:
         console.log("Pizza Margherita");
     break;

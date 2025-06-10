@@ -2,7 +2,7 @@ function getNombreDeJours(mois, annee) {
   // Les mois en JavaScript sont numérotés de 1 à 12 ici
   // Utilisation de la date pour obtenir le dernier jour du mois
   if (mois < 1 || mois > 12) {
-    return "Mois invalide. Entrez une valeur entre 1 et 12.";
+    return ;
   }
 
   // Crée une date au jour 0 du mois suivant
