@@ -1,4 +1,4 @@
-var cercle = document.getElementById("cursor");
+const cercle = document.getElementById("cursor");
 
 document.addEventListener('mousemove', (cursor) => {
     cercle.style.left = cursor.clientX + "px";
@@ -7,3 +7,4 @@ document.addEventListener('mousemove', (cursor) => {
     console.log(cursor.clientX, cursor.clientY);
     
 });
+

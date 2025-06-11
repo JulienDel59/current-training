@@ -3,6 +3,6 @@
 
 
     bouton.addEventListener('click', () => {
-      paragraphe.style.backgroundColor = "red";
+      paragraphe.style.color = "red";
 
     });
