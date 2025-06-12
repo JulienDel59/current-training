@@ -1,19 +1,19 @@
-    //  const bouton = document.getElementById("supprimerBtn");
+     const bouton = document.getElementById("supprimerBtn");
 
-    //     bouton.addEventListener("click", function() {
-    //         const liste = document.getElementById("maListe");
-    //         const premierElement = liste.querySelector("li");
-
-    //         if (premierElement) {
-    //             liste.removeChild(premierElement);
-    //         }
-    //     });
-
-            function suprimeElement() {
+        bouton.addEventListener("click", function() {
             const liste = document.getElementById("maListe");
-            const premierLi = liste.querySelector("li");
+            const premierElement = liste.querySelector("li");
 
-            if (premierLi) {
-                liste.removeChild(premierLi);
+            if (premierElement) {
+                liste.removeChild(premierElement);
             }
-        }
+        });
+
+        //     function suprimeElement() {
+        //     const liste = document.getElementById("maListe");
+        //     const premierLi = liste.querySelector("li");
+
+        //     if (premierLi) {
+        //         liste.removeChild(premierLi);
+        //     }
+        // }
