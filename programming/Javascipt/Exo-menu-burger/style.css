@@ -1,0 +1,16 @@
+
+.menuBurger {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  width: fit-content;
+}
+
+.menu {
+  display: none;
+  padding: 10px;
+}
+
+.menu.active {
+  display: block;
+}
