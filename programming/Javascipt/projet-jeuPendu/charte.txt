@@ -1,5 +1,6 @@
 - bouton commencer
 
+-ajouter animation erreur letre
 
 -animation victoire 
 

@@ -152,26 +152,25 @@ inputLettre.addEventListener('input', (event) => {
       lettresDevinees.add(lettre);
 
       if (motADeviner.includes(lettre)) {
-        console.log("La lettre est dans le mot !");
         zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
         if (!zoneMot.textContent.includes('_')) {
-          document.getElementById("messageJeu").textContent = "Félicitations ! Tu as gagné 🚀";
+          showCustomAlert("Félicitations ! Tu as gagné 🚀");
           inputLettre.disabled = true;
         }
       } else {
         erreurs++;
-        console.log(`Erreur ${erreurs}/${maxErreurs}`);
+        document.getElementById("nbErreur").textContent =`Erreur ${erreurs}/${maxErreurs}`;
 
         if (erreurs <= maxErreurs) {
             const nomPiece = pieces[erreurs - 1];
             const piece = document.querySelector(`.${nomPiece}`);
           if (piece) {
-           piece.style.visibility = 'hidden';
+           piece.style.visibility = 'hidden'; 
        }
       }
 
         if (erreurs >= maxErreurs) {
-          document.getElementById("messageJeu").textContent = `Perdu ! Le mot était "${motADeviner}" 💀`;
+           showCustomAlert(`Perdu ! Le mot était "${motADeviner}" 💀`);
         inputLettre.disabled = true;
         }
       }
@@ -183,3 +182,15 @@ inputLettre.addEventListener('input', (event) => {
 
   event.target.value = "";
 });
+
+function showCustomAlert(message) {
+    const alertBox = document.getElementById('customAlert');
+    const alertMessage = document.getElementById('customAlertMessage');
+    alertMessage.textContent = message;
+    alertBox.classList.remove('hidden');
+
+    const closeBtn = document.getElementById('customAlertClose');
+    closeBtn.onclick = () => {
+        alertBox.classList.add('hidden');
+    };
+}
