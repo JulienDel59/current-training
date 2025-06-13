@@ -1,18 +1,7 @@
 - bouton commencer
 
-- gerer la génaration de mot aleatoire 
-
-- prevoir un endroit ou entrer le mot letre par letre 
-
--afficher la bonne letre au bonne endroit
-
-- animation du pendu en cas d'erreur 
-
--animation cas de bonne letre trouver 
 
 -animation victoire 
-
--définir un nombre d'erreur autoriser 
 
 -animation defaite 
 

@@ -111,15 +111,25 @@ function choisirMot() {
   return listeMots[index];
 }
 
-
 const motADeviner = choisirMot();
 const lettresDevinees = new Set(); 
+
+let erreurs = 0;
+const maxErreurs = 7;
+
+const pieces = [
+  "casque",
+  "torse",
+  "bras-gauche",
+  "bras-droit",
+  "jambe-gauche",
+  "jambe-droit",
+  "jetpack"
+];
 
 document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
 
 console.log("Mot à deviner :", motADeviner);
-
-document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
 
 function afficherMotMasque(mot, lettresDevinees) {
   return mot.split('').map(lettre => 
@@ -130,6 +140,7 @@ function afficherMotMasque(mot, lettresDevinees) {
 console.log(afficherMotMasque(motADeviner, lettresDevinees)); 
 
 const inputLettre = document.getElementById('lettre');
+
 inputLettre.addEventListener('input', (event) => {
   const lettre = event.target.value.toLowerCase();
 
@@ -142,9 +153,27 @@ inputLettre.addEventListener('input', (event) => {
 
       if (motADeviner.includes(lettre)) {
         console.log("La lettre est dans le mot !");
-         zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
+        zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
+        if (!zoneMot.textContent.includes('_')) {
+          document.getElementById("messageJeu").textContent = "Félicitations ! Tu as gagné 🚀";
+          inputLettre.disabled = true;
+        }
       } else {
-        console.log("La lettre n'est PAS dans le mot.");
+        erreurs++;
+        console.log(`Erreur ${erreurs}/${maxErreurs}`);
+
+        if (erreurs <= maxErreurs) {
+            const nomPiece = pieces[erreurs - 1];
+            const piece = document.querySelector(`.${nomPiece}`);
+          if (piece) {
+           piece.style.visibility = 'hidden';
+       }
+      }
+
+        if (erreurs >= maxErreurs) {
+          document.getElementById("messageJeu").textContent = `Perdu ! Le mot était "${motADeviner}" 💀`;
+        inputLettre.disabled = true;
+        }
       }
     }
 
