@@ -16,5 +16,4 @@
 
 -animation defaite 
 
-
 - nouveau mot apres défaite ou victoire 
