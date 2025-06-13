@@ -127,24 +127,27 @@ const lettresDevinees = new Set();
 console.log(afficherMotMasque(motADeviner, lettresDevinees)); 
 
 const inputLettre = document.getElementById('lettre');
-
-inputLettre.addEventListener('input', (e) => {
-  const lettre = e.target.value.toLowerCase();
+inputLettre.addEventListener('input', (event) => {
+  const lettre = event.target.value.toLowerCase();
 
   if (/^[a-z]$/.test(lettre)) {
-    console.log("Lettre valide :", lettre);
 
-    if (motADeviner.includes(lettre)) {
-      console.log("La lettre est dans le mot !");
-      // Tu peux ici ajouter la lettre dans ta liste de lettres devinées
+    if (lettresDevinees.has(lettre)) {
+      console.log("Lettre déjà proposée :", lettre);
     } else {
-      console.log("La lettre n'est PAS dans le mot.");
-      // Ici, tu peux gérer l'erreur (perte de vie, afficher une partie du pendu...)
+      // La lettre est nouvelle, on l'ajoute au Set
+      lettresDevinees.add(lettre);
+
+      if (motADeviner.includes(lettre)) {
+        console.log("La lettre est dans le mot !");
+      } else {
+        console.log("La lettre n'est PAS dans le mot.");
+      }
     }
 
   } else {
     console.log("Lettre invalide ou multiple caractères");
   }
 
-  e.target.value = "";
+  event.target.value = "";
 });
