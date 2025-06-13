@@ -1,6 +1,9 @@
 .bgBody {
-   background-image: url(images/space2.jpg);
-   background-size: cover;
+  height: 1000px;
+  background-image: url(images/space2.jpg);
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -22,7 +25,7 @@
     display: block; 
 }
 
-#zone-pendu {
+#zonePendu {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -99,21 +102,33 @@
     border-radius: 5px;
 } 
 
- #zone-saisie {
-    margin: 30px auto;
+#zoneMot {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  letter-spacing: 10px;
+}
+
+ #zoneSaisie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    margin: 30px auto; 
     width: 300px;
     text-align: center;
     color: white;
 } 
 
- #zone-saisie form {
-    display: flex;
+ #zoneSaisie form {
+    display: flex;;
     justify-content: center;
     gap: 10px;
     margin-bottom: 15px;
 } 
 
- #zone-saisie input[type="text"] {
+ #zoneSaisie input[type="text"] {
     width: 40px;
     font-size: 1.5rem;
     text-align: center;

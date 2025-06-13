@@ -113,16 +113,19 @@ function choisirMot() {
 
 
 const motADeviner = choisirMot();
+const lettresDevinees = new Set(); 
+
+document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
+
 console.log("Mot à deviner :", motADeviner);
+
+document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
 
 function afficherMotMasque(mot, lettresDevinees) {
   return mot.split('').map(lettre => 
     lettresDevinees.has(lettre) ? lettre : '_'
   ).join(' ');
 }
-
-const lettresDevinees = new Set(); 
-
 
 console.log(afficherMotMasque(motADeviner, lettresDevinees)); 
 
@@ -135,11 +138,11 @@ inputLettre.addEventListener('input', (event) => {
     if (lettresDevinees.has(lettre)) {
       console.log("Lettre déjà proposée :", lettre);
     } else {
-      // La lettre est nouvelle, on l'ajoute au Set
       lettresDevinees.add(lettre);
 
       if (motADeviner.includes(lettre)) {
         console.log("La lettre est dans le mot !");
+         zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
       } else {
         console.log("La lettre n'est PAS dans le mot.");
       }
