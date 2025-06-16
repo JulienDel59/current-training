@@ -182,8 +182,6 @@ const inputLettre = document.getElementById('lettre');
 
 inputLettre.disabled = true;
 
-
-
 inputLettre.addEventListener('input', (event) => {
   const lettre = event.target.value.toLowerCase();
 
@@ -225,4 +223,3 @@ inputLettre.addEventListener('input', (event) => {
 
   event.target.value = "";
 });
-
