@@ -35,6 +35,82 @@ html {
     height: 200px;
 }
 
+#personnage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 200px;
+  z-index: 0;
+}
+
+
+.p-tete {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background: #2f2f2f;
+  border-radius: 50%;
+}
+
+
+.p-torse {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background: #3a3a3a;
+  border-radius: 15px;
+}
+
+.p-bras.gauche {
+  position: absolute;
+  top: 80px;
+  left: -25px;
+  width: 35px;
+  height: 15px;
+  background: #3a3a3a;
+  border-radius: 15px;
+}
+
+
+.p-bras.droit {
+  position: absolute;
+  top: 80px;
+  right: -35px;
+  width: 35px;
+  height: 15px;
+  background: #3a3a3a;
+  border-radius: 15px;
+}
+
+
+.p-jambe.gauche {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 10px;
+  height: 50px;
+  background: #3a3a3a;
+  border-radius: 15px;
+}
+
+
+.p-jambe.droit {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  width: 10px;
+  height: 50px;
+  background: #3a3a3a;
+  border-radius: 15px;
+}
+
+
+
 .piece {
     position: absolute;
     background-color: #ccc;
@@ -68,7 +144,6 @@ html {
   transform: rotate(-20deg);
 }
 
-
 .torse {
     top: 80px;
     left: 20px;
@@ -76,7 +151,6 @@ html {
     height: 70px;
     background: linear-gradient(to bottom, #aaa, #888);
 }
-
 
 .bras-gauche {
     top: 80px;
@@ -86,7 +160,6 @@ html {
     background: linear-gradient(to right, #ccc, #aaa);
 }
 
-
 .bras-droit {
     top: 80px;
     right: -35px;
@@ -94,7 +167,6 @@ html {
     height: 15px;
     background: linear-gradient(to right, #ccc, #aaa);
 }
-
 
 .jambe-gauche {
     top: 150px;
@@ -104,7 +176,6 @@ html {
     background: linear-gradient(to bottom, #999, #666);
 }
 
-
 .jambe-droit {
     top: 150px;
     left: 70px;
@@ -112,7 +183,6 @@ html {
     height: 60px;
     background: linear-gradient(to bottom, #999, #666);
 }
-
 
 .jetpack {
     top: 60px;
@@ -125,7 +195,7 @@ html {
 
 .torse, .bras-gauche, .bras-droit, .jambe-gauche, .jambe-droit, .jetpack {
   border-radius: 15px; 
-}
+} 
 
 #zoneMot {
   text-align: center;
@@ -216,5 +286,5 @@ html {
 }
 
 #astronaute {
-  animation: levitate 3s ease-in-out infinite;
+  animation: levitate 5s ease-in-out infinite;
 }
