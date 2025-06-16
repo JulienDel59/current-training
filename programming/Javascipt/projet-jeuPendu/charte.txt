@@ -1,4 +1,4 @@
-- bouton commencer
+
 
 -ajouter animation erreur letre
 
@@ -6,4 +6,3 @@
 
 -animation defaite 
 
-- nouveau mot apres défaite ou victoire 

@@ -58,7 +58,7 @@ const listeMots = [
   "mercure",
   "eclipse",
   "cratere",
-  "sol",
+  "arian",
   "asteroid",
   "orbital",
   "cryospace",
@@ -75,7 +75,7 @@ const listeMots = [
   "voie",
   "asteroides",
   "atmospherique",
-  "banlieue",
+  "celeste",
   "corpsceleste",
   "decollage",
   "debris",
@@ -111,6 +111,42 @@ function choisirMot() {
   return listeMots[index];
 }
 
+function showCustomAlert(message) {
+    const alertBox = document.getElementById('customAlert');
+    const alertMessage = document.getElementById('customAlertMessage');
+    alertMessage.textContent = message;
+    alertBox.classList.remove('hidden');
+
+    const closeBtn = document.getElementById('customAlertClose');
+    closeBtn.onclick = () => {
+        alertBox.classList.add('hidden');
+     resetGame();   
+    };
+}
+
+function resetGame() {
+  lettresDevinees.clear();
+  motADeviner = choisirMot();
+  erreurs = 0;
+  document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
+  document.getElementById("nbErreur").textContent = 'Erreur 0/7';
+  inputLettre.disabled = false;
+  inputLettre.value = "";
+  inputLettre.focus();
+  pieces.forEach(pieces => {
+    const piece = document.querySelector('.' + pieces);
+    if (piece) {
+      piece.style.visibility = 'visible'; 
+    }
+  });
+}
+
+
+btnPlay.addEventListener('click', () => {
+  resetGame();
+
+})  
+
 let motADeviner = choisirMot();
 const lettresDevinees = new Set(); 
 
@@ -118,13 +154,18 @@ let erreurs = 0;
 const maxErreurs = 7;
 
 const pieces = [
-  "casque",
-  "torse",
-  "bras-gauche",
-  "bras-droit",
-  "jambe-gauche",
+  "jetpack",
   "jambe-droit",
-  "jetpack"
+  "jambe-gauche",
+  "bras-droit",
+  "bras-gauche",
+  "torse",
+  "casque",
+ 
+  
+  
+ 
+  
 ];
 
 document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
@@ -137,9 +178,11 @@ function afficherMotMasque(mot, lettresDevinees) {
   ).join(' ');
 }
 
-console.log(afficherMotMasque(motADeviner, lettresDevinees)); 
-
 const inputLettre = document.getElementById('lettre');
+
+inputLettre.disabled = true;
+
+
 
 inputLettre.addEventListener('input', (event) => {
   const lettre = event.target.value.toLowerCase();
@@ -183,32 +226,3 @@ inputLettre.addEventListener('input', (event) => {
   event.target.value = "";
 });
 
-function showCustomAlert(message) {
-    const alertBox = document.getElementById('customAlert');
-    const alertMessage = document.getElementById('customAlertMessage');
-    alertMessage.textContent = message;
-    alertBox.classList.remove('hidden');
-
-    const closeBtn = document.getElementById('customAlertClose');
-    closeBtn.onclick = () => {
-        alertBox.classList.add('hidden');
-     resetGame();   
-    };
-}
-
-function resetGame() {
-  lettresDevinees.clear();
-  motADeviner = choisirMot();
-  erreurs = 0;
-  document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
-  document.getElementById("nbErreur").textContent = 'Erreur 0/7';
-  inputLettre.disabled = false;
-  inputLettre.value = "";
-  inputLettre.focus();
-  pieces.forEach(pieces => {
-    const piece = document.querySelector('.' + pieces);
-    if (piece) {
-      piece.style.visibility = 'visible'; 
-    }
-  });
-} 
