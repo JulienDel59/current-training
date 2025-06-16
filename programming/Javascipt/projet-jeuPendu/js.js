@@ -190,7 +190,6 @@ inputLettre.addEventListener('input', (event) => {
   if (/^[a-z]$/.test(lettre)) {
 
     if (lettresDevinees.has(lettre)) {
-      console.log("Lettre déjà proposée :", lettre);
       secouerInput();
     } else {
       lettresDevinees.add(lettre);
@@ -221,10 +220,8 @@ inputLettre.addEventListener('input', (event) => {
     }
 
   } else {
-    console.log("Lettre invalide ou multiple caractères");
      secouerInput();
   }
 
   event.target.value = "";
 });
-
