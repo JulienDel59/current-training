@@ -141,6 +141,13 @@ function resetGame() {
   });
 }
 
+function secouerInput() {
+  inputLettre.classList.add('shake');
+  inputLettre.addEventListener('animationend', () => {
+    inputLettre.classList.remove('shake');
+  });
+}
+
 
 btnPlay.addEventListener('click', () => {
   resetGame();
@@ -161,16 +168,9 @@ const pieces = [
   "bras-gauche",
   "torse",
   "casque",
- 
-  
-  
- 
-  
 ];
 
 document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
-
-console.log("Mot à deviner :", motADeviner);
 
 function afficherMotMasque(mot, lettresDevinees) {
   return mot.split('').map(lettre => 
@@ -191,6 +191,7 @@ inputLettre.addEventListener('input', (event) => {
 
     if (lettresDevinees.has(lettre)) {
       console.log("Lettre déjà proposée :", lettre);
+      secouerInput();
     } else {
       lettresDevinees.add(lettre);
 
@@ -221,6 +222,7 @@ inputLettre.addEventListener('input', (event) => {
 
   } else {
     console.log("Lettre invalide ou multiple caractères");
+     secouerInput();
   }
 
   event.target.value = "";

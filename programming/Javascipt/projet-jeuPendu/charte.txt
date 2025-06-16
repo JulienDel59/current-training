@@ -2,7 +2,6 @@
 
 -ajouter animation erreur letre
 
--animation victoire 
 
--animation defaite 
+
 
