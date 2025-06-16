@@ -1,10 +1,13 @@
+html {
+    color:gold;
+}
+
 .bgBody {
   height: 1000px;
   background-image: url(images/space2.jpg);
   background-repeat: no-repeat; 
   background-position: center;
   background-size: cover;
-  color : #f5c518;
 }
 
 .title {
@@ -19,11 +22,6 @@
     padding-top: 20px;
 }
 
-.piece {
-    position: absolute;
-    background-color: #ccc;
-    display: block; 
-}
 
 #zonePendu {
     display: flex;
@@ -37,23 +35,46 @@
     height: 200px;
 }
 
+.piece {
+    position: absolute;
+    background-color: #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+     border: 1px solid rgba(255,255,255,0.2);
+    display: block; 
+}
 
 .casque {
-    top: 0;
-    left: 15px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid #555;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #ccc);
+  border: 3px solid #666;
+  overflow: hidden;
+  box-shadow: inset -4px -4px 10px rgba(0,0,0,0.2);
 }
+
+.casque::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 20px;
+  background: rgba(0, 200, 255, 0.3);
+  border-radius: 50%;
+  transform: rotate(-20deg);
+}
+
 
 .torse {
     top: 80px;
     left: 20px;
     width: 70px;
     height: 70px;
-    background-color: #aaa;
+    background: linear-gradient(to bottom, #aaa, #888);
 }
 
 
@@ -62,7 +83,7 @@
     left: -25px;
     width: 45px;
     height: 15px;
-    background-color: #bbb;
+    background: linear-gradient(to right, #ccc, #aaa);
 }
 
 
@@ -71,7 +92,7 @@
     right: -35px;
     width: 45px;
     height: 15px;
-    background-color: #bbb;
+    background: linear-gradient(to right, #ccc, #aaa);
 }
 
 
@@ -80,7 +101,7 @@
     left:20px;
     width: 20px;
     height: 60px;
-    background-color: #999;
+    background: linear-gradient(to bottom, #999, #666);
 }
 
 
@@ -89,7 +110,7 @@
     left: 70px;
     width: 20px;
     height: 60px;
-    background-color: #999;
+    background: linear-gradient(to bottom, #999, #666);
 }
 
 
@@ -98,9 +119,13 @@
     left: 20px;
     width: 70px;
     height: 20px;
-    background-color: #444;
+    background: linear-gradient(to bottom, #555, #222);
     border-radius: 5px;
 } 
+
+.torse, .bras-gauche, .bras-droit, .jambe-gauche, .jambe-droit, .jetpack {
+  border-radius: 15px; 
+}
 
 #zoneMot {
   text-align: center;
@@ -144,7 +169,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7); 
+  background: rgba(0,0,0,0.7);  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +183,7 @@
 .custom-alert-box {
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black; 
   text-align: center;
 }
 
@@ -182,4 +207,14 @@
 
 .shake {
   animation: shake 0.5s;
+}
+
+@keyframes levitate {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0px); }
+}
+
+#astronaute {
+  animation: levitate 3s ease-in-out infinite;
 }
