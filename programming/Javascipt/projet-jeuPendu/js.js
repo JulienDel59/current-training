@@ -202,7 +202,7 @@ inputLettre.addEventListener('input', (event) => {
         }
       } else {
         erreurs++;
-        document.getElementById("nbErreur").textContent =`Erreur ${erreurs}/${maxErreurs}`;
+        document.getElementById("nbErreur").textContent =`${erreurs}/${maxErreurs}`;
 
         if (erreurs <= maxErreurs) {
             const nomPiece = pieces[erreurs - 1];
@@ -225,3 +225,4 @@ inputLettre.addEventListener('input', (event) => {
 
   event.target.value = "";
 });
+
