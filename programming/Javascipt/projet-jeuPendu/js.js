@@ -111,7 +111,7 @@ function choisirMot() {
   return listeMots[index];
 }
 
-const motADeviner = choisirMot();
+let motADeviner = choisirMot();
 const lettresDevinees = new Set(); 
 
 let erreurs = 0;
@@ -171,7 +171,7 @@ inputLettre.addEventListener('input', (event) => {
 
         if (erreurs >= maxErreurs) {
            showCustomAlert(`Perdu ! Le mot était "${motADeviner}" 💀`);
-        inputLettre.disabled = true;
+           inputLettre.disabled = true;
         }
       }
     }
@@ -192,5 +192,23 @@ function showCustomAlert(message) {
     const closeBtn = document.getElementById('customAlertClose');
     closeBtn.onclick = () => {
         alertBox.classList.add('hidden');
+     resetGame();   
     };
 }
+
+function resetGame() {
+  lettresDevinees.clear();
+  motADeviner = choisirMot();
+  erreurs = 0;
+  document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
+  document.getElementById("nbErreur").textContent = 'Erreur 0/7';
+  inputLettre.disabled = false;
+  inputLettre.value = "";
+  inputLettre.focus();
+  pieces.forEach(pieces => {
+    const piece = document.querySelector('.' + pieces);
+    if (piece) {
+      piece.style.visibility = 'visible'; 
+    }
+  });
+} 
