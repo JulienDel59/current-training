@@ -202,7 +202,7 @@ button {
     border-radius: 5px;
 } 
 
-.torse, .bras-gauche, .bras-droit, .jambe-gauche, .jambe-droit, .jetpack {
+.torse, .bras , .jambe, .jetpack {
   border-radius: 15px; 
 } 
 

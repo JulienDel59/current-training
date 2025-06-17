@@ -117,6 +117,16 @@ const backgrounds = [
   'url("images/space8.jpg")'
 ];
 
+const pieces = [
+  "jetpack",
+  "jambe-droit",
+  "jambe-gauche",
+  "bras-droit",
+  "bras-gauche",
+  "torse",
+  "casque",
+];
+
 function choisirMot() {
   const index = Math.floor(Math.random() * listeMots.length);
   return listeMots[index];
@@ -136,7 +146,7 @@ function showCustomAlert(message) {
     const closeBtn = document.getElementById('customAlertClose');
     closeBtn.onclick = () => {
         alertBox.classList.add('hidden');
-     resetGame();   
+     resetGame(); 
     };
 }
 
@@ -158,6 +168,37 @@ function resetGame() {
   });
 }
 
+function traiterLettre(lettre) {
+  if (lettresDevinees.has(lettre)) {
+    secouerInput();
+    return;
+  }
+
+  lettresDevinees.add(lettre);
+
+  if (motADeviner.includes(lettre)) {
+    zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
+    if (!zoneMot.textContent.includes('_')) {
+      showCustomAlert("Félicitations ! Tu as gagné 🚀");
+      inputLettre.disabled = true;
+    }
+  } else {
+    erreurs++;
+    document.getElementById("nbErreur").textContent = `${erreurs}/${maxErreurs}`;
+
+    if (erreurs <= maxErreurs) {
+      const nomPiece = pieces[erreurs - 1];
+      const piece = document.querySelector(`.${nomPiece}`);
+      if (piece) piece.style.visibility = 'hidden';
+    }
+
+    if (erreurs >= maxErreurs) {
+      showCustomAlert(`Perdu ! Le mot était "${motADeviner}" 💀`);
+      inputLettre.disabled = true;
+    }
+  }
+}
+
 function secouerInput() {
   inputLettre.classList.add('shake');
   inputLettre.addEventListener('animationend', () => {
@@ -177,15 +218,7 @@ const lettresDevinees = new Set();
 let erreurs = 0;
 const maxErreurs = 7;
 
-const pieces = [
-  "jetpack",
-  "jambe-droit",
-  "jambe-gauche",
-  "bras-droit",
-  "bras-gauche",
-  "torse",
-  "casque",
-];
+
 
 document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
 
@@ -202,41 +235,58 @@ inputLettre.disabled = true;
 inputLettre.addEventListener('input', (event) => {
   const lettre = event.target.value.toLowerCase();
 
-  if (/^[a-z]$/.test(lettre)) {
-
-    if (lettresDevinees.has(lettre)) {
-      secouerInput();
-    } else {
-      lettresDevinees.add(lettre);
-
-      if (motADeviner.includes(lettre)) {
-        zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
-        if (!zoneMot.textContent.includes('_')) {
-          showCustomAlert("Félicitations ! Tu as gagné 🚀");
-          inputLettre.disabled = true;
-        }
-      } else {
-        erreurs++;
-        document.getElementById("nbErreur").textContent =`${erreurs}/${maxErreurs}`;
-
-        if (erreurs <= maxErreurs) {
-            const nomPiece = pieces[erreurs - 1];
-            const piece = document.querySelector(`.${nomPiece}`);
-          if (piece) {
-           piece.style.visibility = 'hidden'; 
-       }
-      }
-
-        if (erreurs >= maxErreurs) {
-           showCustomAlert(`Perdu ! Le mot était "${motADeviner}" 💀`);
-           inputLettre.disabled = true;
-        }
-      }
-    }
-
-  } else {
-     secouerInput();
+   if (!/^[a-z]$/.test(lettre)) {
+    secouerInput();
+    event.target.value = "";
+    return;
   }
 
-  event.target.value = "";
+  inputLettre.disabled = true;
+
+  setTimeout(() => {
+    traiterLettre(lettre); 
+
+    inputLettre.disabled = false;
+    inputLettre.value = "";
+    inputLettre.focus();
+  }, 300); //
 });
+
+//   if (/^[a-z]$/.test(lettre)) {
+
+//     if (lettresDevinees.has(lettre)) {
+//       secouerInput();
+//     } else {
+//       lettresDevinees.add(lettre);
+
+//       if (motADeviner.includes(lettre)) {
+//         zoneMot.textContent = afficherMotMasque(motADeviner, lettresDevinees);
+//         if (!zoneMot.textContent.includes('_')) {
+//           showCustomAlert("Félicitations ! Tu as gagné 🚀");
+//           inputLettre.disabled = true;
+//         }
+//       } else {
+//         erreurs++;
+//         document.getElementById("nbErreur").textContent =`${erreurs}/${maxErreurs}`;
+
+//         if (erreurs <= maxErreurs) {
+//             const nomPiece = pieces[erreurs - 1];
+//             const piece = document.querySelector(`.${nomPiece}`);
+//           if (piece) {
+//            piece.style.visibility = 'hidden'; 
+//        }
+//       }
+
+//         if (erreurs >= maxErreurs) {
+//            showCustomAlert(`Perdu ! Le mot était "${motADeviner}" 💀`);
+//            inputLettre.disabled = true;
+//         }
+//       }
+//     }
+
+//   } else {
+//      secouerInput();
+//   }
+
+//   event.target.value = "";
+// });
