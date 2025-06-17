@@ -129,7 +129,7 @@ const pieces = [
 
 function choisirMot() {
   const index = Math.floor(Math.random() * listeMots.length);
-  return listeMots[index];
+    return listeMots[index];
 }
 
 function changerBackground() {
@@ -223,7 +223,7 @@ const maxErreurs = 7;
 document.getElementById("zoneMot").textContent = afficherMotMasque(motADeviner, lettresDevinees);
 
 function afficherMotMasque(mot, lettresDevinees) {
-  return mot.split('').map(lettre => 
+   return mot.split('').map(lettre => 
     lettresDevinees.has(lettre) ? lettre : '_'
   ).join(' ');
 }
