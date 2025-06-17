@@ -106,9 +106,22 @@ const listeMots = [
   "planetaire"
 ];
 
+const backgrounds = [
+  'url("images/space.jpg")',
+  'url("images/space2.jpg")',
+  'url("images/space3.jpg")',
+  'url("images/space4.jpg")',
+  'url("images/space5.jpg")'
+];
+
 function choisirMot() {
   const index = Math.floor(Math.random() * listeMots.length);
   return listeMots[index];
+}
+
+function changerBackground() {
+  const index = Math.floor(Math.random() * backgrounds.length);
+  document.body.style.backgroundImage = backgrounds[index];
 }
 
 function showCustomAlert(message) {
@@ -125,6 +138,7 @@ function showCustomAlert(message) {
 }
 
 function resetGame() {
+  changerBackground();
   lettresDevinees.clear();
   motADeviner = choisirMot();
   erreurs = 0;
