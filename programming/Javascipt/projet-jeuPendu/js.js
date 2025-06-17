@@ -252,6 +252,12 @@ inputLettre.addEventListener('input', (event) => {
   }, 300); //
 });
 
+
+
+
+
+
+
 //   if (/^[a-z]$/.test(lettre)) {
 
 //     if (lettresDevinees.has(lettre)) {
