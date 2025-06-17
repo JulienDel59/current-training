@@ -4,7 +4,7 @@ html {
 
 .bgBody {
   height: 1000px;
-  background-image: url(images/space5.jpg);
+  background-image: url(images/space.jpg); 
   background-repeat: no-repeat; 
   background-position: center;
   background-size: cover;
@@ -13,6 +13,7 @@ html {
 .title {
     text-align: center;
     Text-transform: uppercase;
+    box-shadow: 5px 5px 10px black;
 
 }
 
@@ -20,6 +21,14 @@ html {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+}
+
+button {
+  border-radius: 30px;
+  padding: 5px 10px;
+  border: 3px solid black;
+  background-color: gold;
+  box-shadow: 5px 5px 10px black;
 }
 
 

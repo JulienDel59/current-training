@@ -111,7 +111,10 @@ const backgrounds = [
   'url("images/space2.jpg")',
   'url("images/space3.jpg")',
   'url("images/space4.jpg")',
-  'url("images/space5.jpg")'
+  'url("images/space5.jpg")',
+  'url("images/space6.jpg")',
+  'url("images/space7.jpg")',
+  'url("images/space8.jpg")'
 ];
 
 function choisirMot() {
