@@ -4,13 +4,13 @@ body {
     padding: 20px;
 }
 
-#div {
+#carct {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-#div > div {
+#carct > div {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -19,16 +19,16 @@ body {
     transition: transform 0.2s ease;
 }
 
-#div > div:hover {
+#carct > div:hover {
     transform: scale(1.05);
 }
 
-#div img {
+#carct img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-#div p {
+#carct p {
     font-weight: bold;
     margin: 10px 0 0;
 }

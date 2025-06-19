@@ -1,4 +1,4 @@
-const container = document.getElementById("div");
+const container = document.getElementById("carct");
 
 function afficherPersonnages(personnages) {
   personnages.forEach(personnage => {
