@@ -22,6 +22,8 @@ function chargerTousLesPersonnages() {
     .then(data => {
       // Afficher les personnages de la première page
       afficherPersonnages(data.results);
+      
+      
 
       const totalPages = data.info.pages;
 
@@ -33,14 +35,13 @@ function chargerTousLesPersonnages() {
             afficherPersonnages(data.results);
           });
       }
-    })
-    .catch(error => {
-      console.error("Erreur lors de la récupération des personnages :", error);
     });
 }
 
 // Lancer le chargement
 chargerTousLesPersonnages();
+
+
 
         
         
