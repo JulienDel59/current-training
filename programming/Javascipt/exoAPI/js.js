@@ -1,12 +1,14 @@
 fetch("https://trouve-mot.fr/api/random/10")
   .then((response) => response.json())
   .then((words) => {
-    console.log(words);
-    const ul = document.createElement('ul'); // Crée une liste
+    console.log(words); 
+    const ul = document.createElement('ul');
+
     words.forEach(word => {
-      const li = document.createElement('li'); // Crée un élément de liste
-      li.textContent = item.word; // Met le mot dans l'élément
-      ul.appendChild(li); // Ajoute l'élément à la liste
+      const li = document.createElement('li');
+      li.textContent = word.name; 
+      ul.appendChild(li);
     });
-    document.body.appendChild(ul); // Ajoute la liste dans le body
-  });
+
+    document.body.appendChild(ul);
+  })
