@@ -8,3 +8,14 @@ const numbersCheckbox = document.getElementById("numbers");
 const symbolsCheckbox = document.getElementById("symbols"); 
 
 const Buntton = document.getElementById('generateButton')
+
+const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numbers = "0123456789";
+const symbols = "!@#$%^&*()_+[]{}|;:,.<>?/~`-=";
+
+rangeLenght.addEventListener("input" , () => {
+    displayLenght.value = rangeLenght.value;
+});
+
+
