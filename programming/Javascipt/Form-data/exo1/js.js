@@ -9,3 +9,4 @@ form.addEventListener('submit', (e) =>{
     console.log(`Prenom: ${data.get("Prenom")}, Nom: ${data.get("Nom")}`);
 
 });
+
