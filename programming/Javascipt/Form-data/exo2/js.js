@@ -24,8 +24,8 @@ function  generatePassword () {
 
     if (lowercaseCheckbox.checked) characters = `${characters}${lowercaseLetters}`;
     if (uppercaseCheckbox.checked) characters = `${characters}${uppercaseLetters}`;
-    if (numbersCheckbox.checked) characters += `${characters}${numbers}`;
-    if (symbolsCheckbox.checked) characters += `${characters}${symbols}`;
+    if (numbersCheckbox.checked) characters = `${characters}${numbers}`;
+    if (symbolsCheckbox.checked) characters = `${characters}${symbols}`;
 
     let password = "";
     for (let i = 0; i < length; i++) {
