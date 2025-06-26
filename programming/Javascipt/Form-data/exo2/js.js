@@ -18,32 +18,6 @@ rangeInput.addEventListener("input" , () => {
     displayLenght.value = rangeInput.value;
 });
 
-// function  generatePassword () {
-//     const length = parseInt(rangeInput.value);
-//     let characters = "" ;
-
-//     if (lowercaseCheckbox.checked) characters = `${characters}${lowercaseLetters}`;
-//     if (uppercaseCheckbox.checked) characters = `${characters}${uppercaseLetters}`;
-//     if (numbersCheckbox.checked) characters = `${characters}${numbers}`;
-//     if (symbolsCheckbox.checked) characters = `${characters}${symbols}`;
-
-//     if (characters === ""){
-//         passwordOutput.value = "Selectionnez au moins une case !";
-//         return;
-//     }
-       
-   
-//     let password = "";
-//     for (let i = 0; i < length; i++) {
-//      const randomChar = characters[Math.floor(Math.random() * characters.length)];
-//      password += randomChar;
-//   }
-
-//   passwordOutput.value = password;
-// }
-    
-// button.addEventListener("click", generatePassword);
-
 
 function generatePassword() {
     const length = parseInt(rangeInput.value);
