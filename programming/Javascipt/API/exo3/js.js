@@ -6,7 +6,7 @@ form.addEventListener('submit', (e) => {
     // Récupération des valeurs des champs
     const firstName = document.querySelector('input[name="FirstName"]').value;
     const lastName = document.querySelector('input[name="LastName"]').value;
-    const age = document.querySelector('input[name=Age').value;
+    const age = document.querySelector('input[name=Age]').value;
 
     console.log(`Prénom: ${firstName}, Nom: ${lastName}`);
 
