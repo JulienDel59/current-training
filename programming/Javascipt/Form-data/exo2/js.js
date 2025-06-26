@@ -18,29 +18,88 @@ rangeInput.addEventListener("input" , () => {
     displayLenght.value = rangeInput.value;
 });
 
-function  generatePassword () {
+// function  generatePassword () {
+//     const length = parseInt(rangeInput.value);
+//     let characters = "" ;
+//     let mandatoryChars = []
+
+//     if (lowercaseCheckbox.checked) characters = `${characters}${lowercaseLetters}`;
+//         mandatoryChars.push(randomCharFrom(lowercaseLetters));
+
+//     if (uppercaseCheckbox.checked) characters = `${characters}${uppercaseLetters}`;
+//         mandatoryChars.push(randomCharFrom( uppercaseLetters));
+
+//     if (numbersCheckbox.checked) characters = `${characters}${numbers}`;
+//         mandatoryChars.push(randomCharFrom( numbers));
+
+//     if (symbolsCheckbox.checked) characters = `${characters}${symbols}`;
+//         mandatoryChars.push(randomCharFrom( symbols));
+
+//     if (characters === ""){
+//         passwordOutput.value = "Selectionnez au moins une case !";
+//         return;
+//     }
+       
+   
+//     let password = mandatoryChars;
+//     for (let i = 0; i < length; i++) {
+//      const randomChar = characters[Math.floor(Math.random() * characters.length)];
+//      password += randomChar;
+//   }
+
+
+//   passwordOutput.value = password;
+// }
+    
+// button.addEventListener("click", generatePassword);
+
+function generatePassword() {
     const length = parseInt(rangeInput.value);
-    let characters = "" ;
+    let characters = "";
+    let mandatoryChars = [];
 
-    if (lowercaseCheckbox.checked) characters = `${characters}${lowercaseLetters}`;
-    if (uppercaseCheckbox.checked) characters = `${characters}${uppercaseLetters}`;
-    if (numbersCheckbox.checked) characters = `${characters}${numbers}`;
-    if (symbolsCheckbox.checked) characters = `${characters}${symbols}`;
+    if (lowercaseCheckbox.checked) {
+        characters += lowercaseLetters;
+        mandatoryChars.push(randomCharFrom(lowercaseLetters));
+    }
+    if (uppercaseCheckbox.checked) {
+        characters += uppercaseLetters;
+        mandatoryChars.push(randomCharFrom(uppercaseLetters));
+    }
+    if (numbersCheckbox.checked) {
+        characters += numbers;
+        mandatoryChars.push(randomCharFrom(numbers));
+    }
+    if (symbolsCheckbox.checked) {
+        characters += symbols;
+        mandatoryChars.push(randomCharFrom(symbols));
+    }
 
-    if (characters === ""){
+    if (characters === "") {
         passwordOutput.value = "Selectionnez au moins une case !";
         return;
     }
-       
-   
-    let password = "";
-    for (let i = 0; i < length; i++) {
-     const randomChar = characters[Math.floor(Math.random() * characters.length)];
-     password += randomChar;
-  }
 
-  passwordOutput.value = password;
+    let password = mandatoryChars;
+
+    for (let i = mandatoryChars.length; i < length; i++) {
+        password.push(randomCharFrom(characters));
+    }
+
+    passwordOutput.value = password.join('');
 }
-    
-button.addEventListener("click", generatePassword);
 
+function randomCharFrom(str) {
+    return str[Math.floor(Math.random() * str.length)];
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+    
+ button.addEventListener("click", generatePassword);
