@@ -27,6 +27,12 @@ function  generatePassword () {
     if (numbersCheckbox.checked) characters = `${characters}${numbers}`;
     if (symbolsCheckbox.checked) characters = `${characters}${symbols}`;
 
+    if (characters === ""){
+        passwordOutput.value = "Selectionnez au moins une case !";
+        return;
+    }
+       
+   
     let password = "";
     for (let i = 0; i < length; i++) {
      const randomChar = characters[Math.floor(Math.random() * characters.length)];
