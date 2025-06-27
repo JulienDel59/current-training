@@ -25,37 +25,73 @@ rangeNbSymbols.addEventListener("input" , () => {
 });
 
 
+// function generatePassword() {
+//     const length = parseInt(rangeInput.value);
+//     let characters = "";
+//     let mandatoryChars = [];
+
+//     if (lowercaseCheckbox.checked) {
+//         characters = `${characters}${lowercaseLetters}`;
+//         mandatoryChars.push(randomCharFrom(lowercaseLetters));
+//     }
+//     if (uppercaseCheckbox.checked) {
+//         characters = `${characters}${uppercaseLetters}`;
+//         mandatoryChars.push(randomCharFrom(uppercaseLetters));
+//     }
+//     if (numbersCheckbox.checked) {
+//         characters = `${characters}${numbers}`;
+//         mandatoryChars.push(randomCharFrom(numbers));
+//     }
+//     if (symbolsCheckbox.checked) {
+//         characters = `${characters}${symbols}`;
+//         mandatoryChars.push(randomCharFrom(symbols));
+//     }
+
+//     if (characters === "") {
+//         passwordOutput.value = "Selectionnez au moins une case !";
+//         return;
+//     }
+
+//     let password = mandatoryChars;
+
+//     for (let i = mandatoryChars.length; i < length; i++) {
+//         password.push(randomCharFrom(characters));
+//     }
+
+//     password = shuffleArray(password);
+//     passwordOutput.value = password.join('');
+// }
+
 function generatePassword() {
     const length = parseInt(rangeInput.value);
-    let characters = "";
-    let mandatoryChars = [];
+    const nbSymbols = parseInt(rangeNbSymbols.value);
 
-    if (lowercaseCheckbox.checked) {
-        characters = `${characters}${lowercaseLetters}`;
-        mandatoryChars.push(randomCharFrom(lowercaseLetters));
-    }
-    if (uppercaseCheckbox.checked) {
-        characters = `${characters}${uppercaseLetters}`;
-        mandatoryChars.push(randomCharFrom(uppercaseLetters));
-    }
-    if (numbersCheckbox.checked) {
-        characters = `${characters}${numbers}`;
-        mandatoryChars.push(randomCharFrom(numbers));
-    }
-    if (symbolsCheckbox.checked) {
-        characters = `${characters}${symbols}`;
-        mandatoryChars.push(randomCharFrom(symbols));
+    let availableChars = "";
+    let password = [];
+
+    // Ajouter exactement nbSymbols si la case est cochée
+    if (symbolsCheckbox.checked && nbSymbols > 0) {
+        for (let i = 0; i < nbSymbols; i++) {
+            password.push(randomCharFrom(symbols));
+        }
     }
 
-    if (characters === "") {
-        passwordOutput.value = "Selectionnez au moins une case !";
+    // Construire la liste des autres types autorisés
+    if (lowercaseCheckbox.checked) availableChars += lowercaseLetters;
+    if (uppercaseCheckbox.checked) availableChars += uppercaseLetters;
+    if (numbersCheckbox.checked) availableChars += numbers;
+
+    // Cas où il ne reste rien d'autre que les symboles
+    const remainingLength = length - password.length;
+
+    if (availableChars === "" && password.length < length) {
+        passwordOutput.value = "Sélectionnez d'autres types de caractères !";
         return;
     }
 
-    let password = mandatoryChars;
-
-    for (let i = mandatoryChars.length; i < length; i++) {
-        password.push(randomCharFrom(characters));
+    // Remplir le reste du mot de passe avec les autres caractères
+    for (let i = 0; i < remainingLength; i++) {
+        password.push(randomCharFrom(availableChars));
     }
 
     password = shuffleArray(password);
