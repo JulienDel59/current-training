@@ -52,7 +52,7 @@ function generatePassword() {
         password.push(randomCharFrom(characters));
     }
 
-    password = shuffleArray(password);
+    // password = shuffleArray(password);
     passwordOutput.value = password.join('');
 }
 
@@ -63,7 +63,7 @@ function randomCharFrom(str) {
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; // Échange les éléments
+        [array[i], array[j]] = [array[j], array[i]]; // Échange les éléments    A REVOIR
     }
     return array;
 }

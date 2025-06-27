@@ -116,3 +116,16 @@ button:hover {
 button:active {
   transform: scale(1.05);
 }
+
+#nbSymbols {
+  width: 80px;
+  position: relative;
+}
+
+.symbol-slider-container {
+   margin-top: 8px; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 10px; 
+} 

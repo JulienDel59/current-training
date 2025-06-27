@@ -30,12 +30,19 @@
       <input type="checkbox" id="numbers">
       <label for="numbers">0-9</label>
 
-      <input type="checkbox" id="symbols">
-      <label for="symbols">!-?</label>
+      <div class="symbols">
+        <input type="checkbox" id="symbols">
+        <label for="symbols">!-?</label>
+        <div class="symbol-slider-container">
+          <input type="range" id="nbSymbols" min="1" max="4" value="1">
+          <!-- <input type="text" id="display-nbSymbols" value="1" readonly> -->
+        </div>
+      </div>
+
     </div>
 
     <button id="generateButton">Générer mot de passe</button>
-    
+
   </div>
 
   <script src="js.js"></script>
