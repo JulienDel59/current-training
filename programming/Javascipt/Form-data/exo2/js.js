@@ -52,11 +52,20 @@ function generatePassword() {
         password.push(randomCharFrom(characters));
     }
 
+    password = shuffleArray(password);
     passwordOutput.value = password.join('');
 }
 
 function randomCharFrom(str) {
     return str[Math.floor(Math.random() * str.length)];
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Échange les éléments
+    }
+    return array;
 }
     
  button.addEventListener("click", generatePassword);
