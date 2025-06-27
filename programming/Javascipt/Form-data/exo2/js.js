@@ -1,6 +1,8 @@
 const passwordOutput = document.getElementById('password-output')
 const rangeInput = document.getElementById('password-length')
 const displayLenght = document.getElementById('display-password-length')
+const rangeNbSymbols = document.getElementById('nbSymbols')
+const displayNbSymbols = document.getElementById('display-nbSymbols')
 
 const lowercaseCheckbox = document.getElementById("lowercase");
 const uppercaseCheckbox = document.getElementById("uppercase");
@@ -16,6 +18,10 @@ const symbols = "!@#$%^&*()_+[]{}|;:,.<>?/~`-=";
 
 rangeInput.addEventListener("input" , () => {
     displayLenght.value = rangeInput.value;
+});
+
+rangeNbSymbols.addEventListener("input" , () => {
+    displayNbSymbols.value = rangeNbSymbols.value;
 });
 
 
@@ -52,7 +58,7 @@ function generatePassword() {
         password.push(randomCharFrom(characters));
     }
 
-    // password = shuffleArray(password);
+    password = shuffleArray(password);
     passwordOutput.value = password.join('');
 }
 
